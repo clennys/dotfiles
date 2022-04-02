@@ -1,2 +1,2 @@
 # dotfiles
-dotfiles management of my workstation with ansible
+dotfiles management of my workstation using ansible
