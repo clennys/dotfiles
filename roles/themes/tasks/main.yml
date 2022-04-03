@@ -12,7 +12,8 @@
     checksum: true
 
 - name: Copy theme ArchLabs-Light
-  ansible.builtin.copy:
+  ansible.builtin.synchronize:
     dest: "{{ ansible_user_dir }}/.themes/ArchLabs-Light"
     src: "ArchLabs-Light/"
+    checksum: true
 
