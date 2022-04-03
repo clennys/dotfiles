@@ -1,0 +1,19 @@
+---
+- name: Install
+  ansible.builtin.package:
+    name:
+      - terminus-fonts
+    state: present
+  become: yes
+
+- name: Local fonts folder
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.fonts"
+    state: directory
+
+- name: Copy font Terminess
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.fonts/Terminess"
+    src: "Terminess/"
+

@@ -27,4 +27,4 @@ if [[ -f "$DOTFILES_DIR/requirements.yml" ]]; then
 fi
 cd "$DOTFILES_DIR"
 
-ansible-playbook --diff "$DOTFILES_DIR/main.yml" --ask-become-pass
+ansible-playbook --diff "$DOTFILES_DIR/main.yml" --ask-become-pass --verbose

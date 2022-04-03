@@ -1,0 +1,17 @@
+---
+- name: Local icon folder
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.icons"
+    state: directory
+
+- name: Copy icons ArchLabs-Dark
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.icons/ArchLabs-Dark"
+    src: "ArchLabs-Dark/"
+
+- name: Copy icons ArchLabs-Light
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.icons/ArchLabs-Light"
+    src: "ArchLabs-Light/"
+

@@ -1,0 +1,49 @@
+#!/bin/sh
+
+# sourced at boot by ~/.xinitrc and most display managers
+export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$HOME/.local/bin:$PATH"
+export QT_QPA_PLATFORMTHEME=qt5ct
+export VISUAL="nvim"
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="firefox"
+export READER="zathura"
+export FILE="pcmanfm"
+export TRANS='/home/dennys/Nextcloud/other/transfer'
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+--color=dark
+--color=fg:#eaebed,bg:#1c2023,hl:#bf616a,fg+:#eaebed,bg+:#1c2023,hl+:#ebcb8b
+--color=info:#a3be8c,prompt:#81a1c1,pointer:#bf616a,marker:#ebcb8b,spinner:#96b4b5,header:#81a1c1'
+# export MANPAGER="nvim -c 'set ft=man' -"
+export GOPATH=$HOME/go
+export SSH_AUTH_SOCK
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.14.1.1-5.fc35.x86_64
+
+export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
+gnome-keyring-daemon --daemonize --login
+setxkbmap us -variant dvorak-alt-intl&
+if xrandr | grep "DP-1-1.3 connected"
+then
+	setxkbmap us altgr-intl&
+	~/.screenlayout/homeoffice_closed.sh&
+	export DP=1
+else
+	export QT_AUTO_SCREEN_SCALE_FACTOR=1
+	export GDK_SCALE=2
+	export GDK_DPI_SCALE=0.5
+	xss-lock slock&
+fi
+
+nm-applet&
+
+nitrogen --restore&
+nextcloud --background&
+systemctl --user import-environment DISPLAY&
+clipmenud&
+xset dpms 600 900 1200
+xset r rate 350 60
+xbacklight -set 60
+
+~/.config/scripts/utility/low_battery.sh&
+picom -b

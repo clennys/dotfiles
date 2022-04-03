@@ -1,0 +1,34 @@
+---
+- name: Install
+  ansible.builtin.package:
+    name:
+      - zsh
+    state: latest
+  become: yes
+
+- name: Set default
+  user:
+    name: "{{ ansible_env['USER'] }}"
+    shell: /usr/bin/zsh
+  become: yes
+
+- name: Copy zprofile
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.zprofile"
+    src: ".zprofile"
+
+- name: Copy zshrc
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.zshrc"
+    src: ".zshrc"
+
+- name: Config folder
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.zsh"
+    state: directory
+
+- name: Copy configuration
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.zsh"
+    src: ".zsh/"

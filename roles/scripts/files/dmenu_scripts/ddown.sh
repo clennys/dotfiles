@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+filemanager=vifm
+term=st
+editor=nvim
+videoplayer=mpv
+audioplayer=mpv
+imageviewer=sxiv
+pdfviewer=zathura
+
+path="$(fd . /home/dennys/Downloads | dmenu -l 30 -p "Open File/Dir:")"
+
+[[ -d "$path" ]] && ($term -e $filemanager "$path" &) && exit
+
+case "$(xdg-mime query filetype "$path")" in
+
+	text/*) ($term -e $editor "$path" &);;
+	video/*) "$videoplayer" "$path";;
+	audio/*) "$audioplayer" "$path";;
+	image/*) "$imageviewer" "$path";;
+	application/pdf*) "$pdfviewer" "$path";;
+	*) xdg-open "$path";;
+esac

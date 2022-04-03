@@ -1,0 +1,17 @@
+---
+- name: Local themes folder
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.themes"
+    state: directory
+
+- name: Copy theme ArchLabs-Dark
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.themes/ArchLabs-Dark"
+    src: "ArchLabs-Dark/"
+
+- name: Copy theme ArchLabs-Light
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.themes/ArchLabs-Light"
+    src: "ArchLabs-Light/"
+

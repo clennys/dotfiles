@@ -1,0 +1,52 @@
+---
+- name: Dependencies
+  ansible.builtin.package:
+    name:
+      - ninja-build 
+      - libtool 
+      - autoconf 
+      - automake 
+      - cmake 
+      - gcc 
+      - gcc-c++
+      - make 
+      - pkgconfig 
+      - unzip 
+      - patch 
+      - gettext
+      - curl
+    state: latest
+  become: yes
+
+- name: Clone
+  ansible.builtin.git:
+    clone: yes
+    depth: 1
+    dest: "{{ ansible_user_dir }}/.source/neovim"
+    force: yes
+    repo: https://github.com/neovim/neovim.git
+    update: yes
+    version: "{{ neovim_version | default('master') }}"
+  register: clone
+
+- name: Build
+  make:
+    chdir: "{{ ansible_user_dir }}/.source/neovim"
+    params:
+      CMAKE_BUILD_TYPE: RelWithDebInfo
+  when: clone.changed
+  become: yes
+
+- name: Install
+  make:
+    chdir: "{{ ansible_user_dir }}/.source/neovim"
+    target: install
+  become: yes
+  when: clone.changed
+  become: yes
+
+- name: Remove build folder
+  ansible.builtin.file:
+    path: "{{ ansible_user_dir }}/Development/repository/github.com/neovim/neovim/build"
+    state: absent
+  become: yes

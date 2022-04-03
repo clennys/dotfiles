@@ -1,4 +1,13 @@
 default_roles:
+  - X
+  - zsh
+  - suckless
   - firefox
-  - ripgrep
+  - neovim
   - kitty
+  - dunst
+  - fonts
+  - zathura
+  - nitrogen
+  - themes
+  - vifm

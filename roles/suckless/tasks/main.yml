@@ -1,0 +1,65 @@
+---
+- name: Install suckless tools dependencies
+  become: yes
+  package:
+    name:
+      - libX11-devel
+      - libXft-devel
+      - libXinerama-devel
+    state: present
+
+- name: Config folder for suckless tools
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.config/suckless"
+    state: directory
+
+- name: Copy source code dwm
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/suckless/dwm-6.3"
+    src: "dwm-6.3/"
+
+- name: Make and make install dwm
+  make:
+    chdir: "{{ ansible_user_dir }}/.config/suckless/dwm-6.3"
+    target: install
+  become: yes
+
+- name: Copy dwm startup script
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.local/bin/startdwm.sh"
+    src: "startdwm.sh"
+
+- name: Copy source code dmenu
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/suckless/dmenu-5.1"
+    src: "dmenu-5.1/"
+
+- name: Make and make install dmenu
+  make:
+    chdir: "{{ ansible_user_dir }}/.config/suckless/dmenu-5.1"
+    target: install
+  become: yes
+
+- name: Copy source code st
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/suckless/st"
+    src: "st/"
+
+- name: Make and make install st
+  make:
+    chdir: "{{ ansible_user_dir }}/.config/suckless/st"
+    target: install
+  become: yes
+
+- name: Copy source code slock
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/suckless/slock"
+    src: "st/"
+
+- name: Make and make install slock
+  make:
+    chdir: "{{ ansible_user_dir }}/.config/suckless/slock"
+    target: install
+  become: yes
+

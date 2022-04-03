@@ -1,0 +1,20 @@
+---
+- name: Install
+  ansible.builtin.package:
+    name:
+      - zathura
+      - zathura-pdf-mupdf
+    state: latest
+  become: yes
+
+- name: Config folder
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.config/zathura"
+    state: directory
+
+- name: Copy configuration
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/zathura/zathurarc"
+    src: "zathurarc"
+
