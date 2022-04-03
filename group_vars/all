@@ -10,4 +10,6 @@ default_roles:
   - zathura
   - nitrogen
   - themes
+  - icons
   - vifm
+  - gtk
