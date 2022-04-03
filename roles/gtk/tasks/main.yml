@@ -1,0 +1,16 @@
+---
+- name: Copy gtk2 configuration
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.gtkrc-2.0"
+    src: ".gtkrc-2.0"
+
+- name: Config folder gtk-3.0
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.config/gtk-3.0"
+    state: directory
+
+- name: Copy configuration
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/gtk-3.0/settings.ini"
+    src: "settings.ini"
