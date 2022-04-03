@@ -25,6 +25,12 @@
     target: install
   become: yes
 
+- name: Create local bin folder
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.local/bin"
+    state: directory
+
 - name: Copy dwm startup script
   ansible.builtin.copy:
     dest: "{{ ansible_user_dir }}/.local/bin/startdwm.sh"
