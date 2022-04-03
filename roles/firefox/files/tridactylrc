@@ -1,0 +1,56 @@
+" $XDG_CONFIG_DIR/tridactyl/tridactylrc (that's
+" ~/.config/tridactyl/tridactylrc to mere mortals) or ~/.tridactylrc and
+" install the native messenger (:installnative in Tridactyl). Run :source to
+" get it in the browser, or just restart.
+
+" Binds
+"
+
+" make d take you to the left (I find it much less confusing)
+bind d composite tabprev; tabclose #
+bind D tabclose
+
+" Make gu take you back to subreddit from comments
+bindurl reddit.com gu urlparent 4
+
+" Only hint search results on Google and DDG
+bindurl www.google.com f hint -Jc #search div:not(.action-menu) > a
+bindurl www.google.com F hint -Jbc #search div:not(.action-menu) > a
+
+" Allow Ctrl-a to select all in the commandline
+unbind --mode=ex <C-a>
+
+" Allow Ctrl-c to copy in the commandline
+unbind --mode=ex <C-c>
+
+" Handy multiwindow/multitasking binds
+bind gd tabdetach
+bind gD composite tabduplicate; tabdetach
+
+ bind / fillcmdline find
+ bind ? fillcmdline find -?
+ bind n findnext 1
+ bind N findnext -1
+ bind ,<Space> nohlsearch
+
+"
+" Misc settings
+"
+
+" set editorcmd to suckless terminal, or use the defaults on other platforms
+js tri.browserBg.runtime.getPlatformInfo().then(os=>{const editorcmd = os.os=="linux" ? "st nvim" : "auto"; tri.config.set("editorcmd", editorcmd)})
+
+" Defaults to 300ms but I'm a 'move fast and close the wrong tabs' kinda chap
+set hintdelay 100
+
+
+"
+" URL redirects
+"
+
+" My Settings
+colorscheme spaceodyssey
+set newtab http://wttr.in/Zurich.png?pTq&background=212121
+
+" For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
+" vim: set filetype=tridactyl

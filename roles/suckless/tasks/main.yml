@@ -6,6 +6,8 @@
       - libX11-devel
       - libXft-devel
       - libXinerama-devel
+      - dbus
+      - dbus-x11
     state: present
 
 - name: Config folder for suckless tools
