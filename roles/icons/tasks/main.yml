@@ -6,12 +6,14 @@
     state: directory
 
 - name: Copy icons ArchLabs-Dark
-  ansible.builtin.copy:
+  ansible.builtin.synchronize:
     dest: "{{ ansible_user_dir }}/.icons/ArchLabs-Dark"
     src: "ArchLabs-Dark/"
+    checksum: true
 
 - name: Copy icons ArchLabs-Light
-  ansible.builtin.copy:
+  ansible.builtin.synchronize:
     dest: "{{ ansible_user_dir }}/.icons/ArchLabs-Light"
     src: "ArchLabs-Light/"
+    checksum: true
 

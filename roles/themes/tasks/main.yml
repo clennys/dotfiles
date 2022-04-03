@@ -6,9 +6,10 @@
     state: directory
 
 - name: Copy theme ArchLabs-Dark
-  ansible.builtin.copy:
+  ansible.builtin.synchronize:
     dest: "{{ ansible_user_dir }}/.themes/ArchLabs-Dark"
     src: "ArchLabs-Dark/"
+    checksum: true
 
 - name: Copy theme ArchLabs-Light
   ansible.builtin.copy:
