@@ -30,4 +30,4 @@ xmodmap ~/.Xmodmap
 
 # launch the session, commands below this line will be ignored
 # exec dwm
-exec ~/.config/scripts/utility/startdwm.sh
+exec ~/.local/bin/startdwm.sh

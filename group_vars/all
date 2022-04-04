@@ -4,6 +4,7 @@ default_roles:
   - git
   - suckless
   - firefox
+  - scripts
   - neovim
   - kitty
   - dunst
@@ -14,3 +15,4 @@ default_roles:
   - icons
   - vifm
   - gtk
+  - qt

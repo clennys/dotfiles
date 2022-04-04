@@ -1,0 +1,61 @@
+---
+- name: Local bin folder
+  ansible.builtin.file:
+    mode: "0755"
+    path: "{{ ansible_user_dir }}/.local/bin"
+    state: directory
+
+- name: Copy colorpicker script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/colorpicker.sh"
+    src: "colorpicker.sh"
+
+- name: Copy dmenu downloads script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/ddown.sh"
+    src: "ddown.sh"
+
+- name: Copy dmenu keyboard layout script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/dklay.sh"
+    src: "dklay.sh"
+
+- name: Copy dmenu man pages script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/dman"
+    src: "dman"
+
+- name: Copy dmenu university files script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/dopen.sh"
+    src: "dopen.sh"
+
+- name: Copy dmenu power script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/dpower.sh"
+    src: "dpower.sh"
+
+- name: Copy dmenu video script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/dvid.sh"
+    src: "dvid.sh"
+
+- name: Copy low battery script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/low_battery.sh"
+    src: "low_battery.sh"
+
+- name: Nvidia prime run script
+  ansible.builtin.copy:
+    mode: "0755"
+    dest: "{{ ansible_user_dir }}/.local/bin/prime-run"
+    src: "prime-run"
+
