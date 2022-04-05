@@ -1,4 +1,11 @@
 ---
+- name: Install cursor theme
+  ansible.builtin.package:
+    name:
+      - breeze-cursor-theme
+    state: latest
+  become: yes
+
 - name: Local icon folder
   ansible.builtin.file:
     mode: "0755"
@@ -10,3 +17,5 @@
     dest: "{{ ansible_user_dir }}/.icons/ArchLabs-Dark"
     src: "ArchLabs-Dark/"
     checksum: true
+
+
