@@ -1,0 +1,7 @@
+---
+- name: Install Dev utilities
+  ansible.builtin.package:
+    name:
+      - exa
+    state: latest
+  become: yes

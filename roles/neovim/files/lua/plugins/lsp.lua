@@ -3,7 +3,7 @@ local cmd = vim.cmd
 
 -- Install Servers
 local lsp_installer = require("nvim-lsp-installer")
-local servers = { "clangd", "bashls", "pyright", "sumneko_lua", "texlab", "tsserver" }
+local servers = { "clangd", "bashls", "pyright", "sumneko_lua", "texlab", "tsserver", "ansiblels" }
 
 for _, name in pairs(servers) do
 	local server_is_found, server = lsp_installer.get_server(name)
