@@ -14,7 +14,7 @@ fi
 # [ -r ~/.Xmodmap ] && xmodmap ~/.Xmodmap
 if xrandr | grep "^DP-1" | grep " connected"
 then
-	[ -r ~/.local/share/xorg/.Xresources ] && xrdb -merge ~/.local/share/xorg/.Xresources
+	[ -r ~/.Xresources-homeoffice ] && xrdb -merge ~/.Xresources-homeoffice
 else
 	[ -r ~/.Xresources ] && xrdb -merge ~/.Xresources
 fi
