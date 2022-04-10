@@ -3,15 +3,22 @@ set -e
 
 DOTFILES_DIR="$HOME/.dotfiles"
 SSH_DIR="$HOME/.ssh"
+EMAIL="dennys.huber@pm.me"
 
+# Install ansible
 if ! [ -x "$(command -v ansible)" ]; then
 	sudo dnf install ansible -y
 fi
 
-if ! [[ -f "$SSH_DIR/id_rsa" ]]; then
+# Create ssh folder
+if ! [[ -d "$SSH_DIR" ]]; then
   mkdir -p "$SSH_DIR"
 
   chmod 700 "$SSH_DIR"
+fi
+
+# Ssh into this maschine
+if ! [[ -f "$SSH_DIR/id_rsa" ]]; then
 
   ssh-keygen -b 4096 -t rsa -f "$SSH_DIR/id_rsa" -N "" -C "$USER@$HOSTNAME"
 
@@ -20,11 +27,20 @@ if ! [[ -f "$SSH_DIR/id_rsa" ]]; then
   chmod 600 "$SSH_DIR/authorized_keys"
 fi
 
+# Github ssh keys
+if ! [[ -f "$SSH_DIR/id_ed25519" ]]; then
+  ssh-keygen -t ed25519 -f "$SSH/id_ed25519" -N "" -C "$EMAIL"
+fi
+
+# Check for ansible requirements
 if [[ -f "$DOTFILES_DIR/requirements.yml" ]]; then
   cd "$DOTFILES_DIR"
 
   ansible-galaxy install -r requirements.yml
 fi
+
+# Change directory into the dotfiles folder
 cd "$DOTFILES_DIR"
 
+# Run the playbook
 ansible-playbook --diff "$DOTFILES_DIR/main.yml" --ask-become-pass --verbose

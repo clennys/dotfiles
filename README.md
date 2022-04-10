@@ -30,3 +30,5 @@ bash $HOME/.dotfiles/bin/dotfiles
 - [ ] Create github ssh key
 - [ ] Add user to appropriate usergroups
 - [ ] Add conditonals to roles
+- [ ] Add autorandr role
+- [ ] Add Pip install (ueberzug, autorandr)

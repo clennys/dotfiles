@@ -8,6 +8,8 @@
       - libXinerama-devel
       - dbus
       - dbus-x11
+      - light
+      - playerctl
     state: present
 
 - name: Config folder for suckless tools

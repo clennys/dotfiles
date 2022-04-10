@@ -3,9 +3,9 @@
 
 include "/home/dennys/.gtkrc-2.0.mine"
 gtk-theme-name="ArchLabs-Dark"
-gtk-icon-theme-name="ArchLabs"
+gtk-icon-theme-name="ArchLabs-Dark"
 gtk-font-name="TerminessTTF Nerd Font Medium 11"
-gtk-cursor-theme-name="ArchLabs"
+gtk-cursor-theme-name="Breeze_Snow"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR

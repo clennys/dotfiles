@@ -12,7 +12,7 @@ fi
 # user init scripts and settings
 # [ -r /etc/X11/xinit/.Xmodmap ] && xmodmap /etc/X11/xinit/.Xmodmap
 # [ -r ~/.Xmodmap ] && xmodmap ~/.Xmodmap
-if xrandr | grep "DP-1-1.3 connected"
+if xrandr | grep "^DP-1" | grep " connected"
 then
 	[ -r ~/.local/share/xorg/.Xresources ] && xrdb -merge ~/.local/share/xorg/.Xresources
 else
