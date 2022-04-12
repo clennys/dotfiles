@@ -1,0 +1,12 @@
+---
+- name: Install programming languages
+  ansible.builtin.packgage:
+    name:
+      - python3
+      - python3-pip
+      - nodejs
+      - npm
+    state: latest
+    become: yes
+
+
