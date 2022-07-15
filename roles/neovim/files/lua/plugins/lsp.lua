@@ -3,7 +3,7 @@ local cmd = vim.cmd
 
 -- Install Servers
 local lsp_installer = require("nvim-lsp-installer")
-local servers = { "clangd", "bashls", "pyright", "sumneko_lua", "texlab", "tsserver", "ansiblels" }
+local servers = { "clangd", "bashls", "pyright", "sumneko_lua", "texlab", "rustls" }
 
 for _, name in pairs(servers) do
 	local server_is_found, server = lsp_installer.get_server(name)
@@ -102,4 +102,5 @@ autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 10000)
 autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 10000)
 autocmd BufWritePre *.py.in lua vim.lsp.buf.formatting_sync(nil, 10000)
 autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 10000)
+autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 10000)
 ]])

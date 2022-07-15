@@ -20,7 +20,7 @@ theme.bg_normal                     = "#1c2023"
 theme.bg_focus                      = "#1c2023"
 theme.fg_urgent                     = "#000000"
 theme.bg_urgent                     = "#bf616a"
-theme.border_width                  = dpi(3)
+theme.border_width                  = dpi(2)
 theme.border_normal                 = "#1c2023"
 theme.border_focus                  = "#005577"
 theme.taglist_fg_focus              = "#eaebed"
@@ -38,7 +38,9 @@ theme.awesome_icon                  = theme.dir .. "/icons/awesome.png"
 theme.menu_submenu_icon             = theme.dir .. "/icons/submenu.png"
 theme.taglist_squares_sel           = theme.dir .. "/icons/square_sel.png"
 theme.taglist_squares_unsel         = theme.dir .. "/icons/square_unsel.png"
-theme.useless_gap                   = dpi(4)
+theme.useless_gap                   = dpi(2)
+theme.gap_single_client             = false
+theme.border_single_client          = false
 theme.layout_txt_tile               = "[]="
 theme.layout_txt_tileleft           = "[l]"
 theme.layout_txt_tilebottom         = "[b]"
@@ -220,7 +222,6 @@ bling.widget.window_switcher.enable {
 	cycleClientsByIdx = awful.client.focus.byidx, -- The function to cycle the clients
 	filterClients = awful.widget.tasklist.filter.currenttags, -- The function to filter the viewed clients
 }
-
 
 
 return theme

@@ -60,7 +60,6 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" }
 awful.layout.layouts = {
-	-- awful.layout.suit.floating,
 	awful.layout.suit.tile,
 	-- awful.layout.suit.tile.left,
 	-- awful.layout.suit.tile.bottom,
@@ -76,6 +75,7 @@ awful.layout.layouts = {
 	-- awful.layout.suit.corner.ne,
 	-- awful.layout.suit.corner.sw,
 	-- awful.layout.suit.corner.se,
+	awful.layout.suit.floating,
 }
 -- }}}
 
@@ -160,18 +160,23 @@ local function set_wallpaper(s)
 	end
 end
 
+screen.connect_signal("arrange", function(s)
+	local max = s.selected_tag.layout.name == "max"
+	local only_one = #s.tiled_clients == 1 -- use tiled_clients so that other floating windows don't affect the count
+	-- but iterate over clients instead of tiled_clients as tiled_clients doesn't include maximized windows
+	for _, c in pairs(s.clients) do
+		if (max or only_one) and not c.floating or c.maximized then
+			c.border_width = 0
+		else
+			c.border_width = beautiful.border_width
+		end
+	end
+end)
+
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
--- }}}
-
--- {{{ Mouse bindings
-root.buttons(gears.table.join(
-	awful.button({}, 3, function() mymainmenu:toggle() end),
-	awful.button({}, 4, awful.tag.viewnext),
-	awful.button({}, 5, awful.tag.viewprev)
-))
 -- }}}
 
 -- {{{ Key bindings
@@ -507,5 +512,22 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
+client.connect_signal("property::position", function(c)
+	if c.class == 'Steam' then
+		local g = c.screen.geometry
+		if c.y + c.height > g.height then
+			c.y = g.height - c.height
+			naughty.notify {
+				text = "restricted window: " .. c.name,
+			}
+		end
+		if c.x + c.width > g.width then
+			c.x = g.width - c.width
+		end
+	end
+end)
+
+
 
 -- }}}
