@@ -16,8 +16,8 @@ theme.wallpaper                     = theme.dir .. "/iceland.jpg"
 theme.font                          = "Terminus 12"
 theme.fg_normal                     = "#9E9E9E"
 theme.fg_focus                      = "#eaebed"
-theme.bg_normal                     = "#1c2023"
-theme.bg_focus                      = "#1c2023"
+theme.bg_normal                     = "#111315"
+theme.bg_focus                      = "#111315"
 theme.fg_urgent                     = "#000000"
 theme.bg_urgent                     = "#bf616a"
 theme.border_width                  = dpi(2)
@@ -121,30 +121,16 @@ function theme.at_screen_connect(s)
 	-- Create the wibox
 	s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(18), bg = theme.bg_normal, fg = theme.fg_normal })
 
-	local art = wibox.widget {
-		image = "default_image.png",
-		resize = true,
-		forced_height = dpi(80),
-		forced_width = dpi(80),
-		widget = wibox.widget.imagebox
-	}
-
-	local name_widget = wibox.widget {
-		markup = 'No players',
-		align = 'center',
-		valign = 'center',
-		widget = wibox.widget.textbox
-	}
 
 	local title_widget = wibox.widget {
-		markup = 'Nothing Playing',
+		markup = '',
 		align = 'center',
 		valign = 'center',
 		widget = wibox.widget.textbox
 	}
 
 	local artist_widget = wibox.widget {
-		markup = 'Nothing Playing',
+		markup = '',
 		align = 'center',
 		valign = 'center',
 		widget = wibox.widget.textbox
@@ -156,12 +142,8 @@ function theme.at_screen_connect(s)
 		player = "spotify"
 	})
 	playerctl:connect_signal("metadata",
-		function(_, title, artist, album_path, album, new, player_name)
+		function(_, title, artist, _, _, _, _)
 			-- Set art widget
-			art:set_image(gears.surface.load_uncached(album_path))
-
-			-- Set player name, title and artist widgets
-			name_widget:set_markup_silently(player_name)
 			title_widget:set_markup_silently(title)
 			artist_widget:set_markup_silently(artist)
 		end)
@@ -204,24 +186,5 @@ function theme.at_screen_connect(s)
 		},
 	}
 end
-
-bling.widget.window_switcher.enable {
-	type = "thumbnail", -- set to anything other than "thumbnail" to disable client previews
-
-	-- keybindings (the examples provided are also the default if kept unset)
-	hide_window_switcher_key = "Escape", -- The key on which to close the popup
-	minimize_key = "n", -- The key on which to minimize the selected client
-	unminimize_key = "N", -- The key on which to unminimize all clients
-	kill_client_key = "q", -- The key on which to close the selected client
-	cycle_key = "Tab", -- The key on which to cycle through all clients
-	previous_key = "Left", -- The key on which to select the previous client
-	next_key = "Right", -- The key on which to select the next client
-	vim_previous_key = "h", -- Alternative key on which to select the previous client
-	vim_next_key = "l", -- Alternative key on which to select the next client
-
-	cycleClientsByIdx = awful.client.focus.byidx, -- The function to cycle the clients
-	filterClients = awful.widget.tasklist.filter.currenttags, -- The function to filter the viewed clients
-}
-
 
 return theme

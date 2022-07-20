@@ -1,7 +1,19 @@
 ---
-- name: Install programming languages
-  ansible.builtin.packgage:
+- name: Install packages with default config
+  ansible.builtin.package:
     name:
+      - NetworkManager
+      - NetworkManager-bluetooth
+      - NetworkManager-wifi
+      - NetworkManager-tui
+      - NetworkManager-openconnect
+      - alsa-utils
+      - bluez
+      - dbus
+      - pipewire
+      - pipewire-alsa
+      - pipewire-pulseaudio
+      - pipewire-utils
       - exa
       - tree
       - flameshot
@@ -12,6 +24,27 @@
       - unzip
       - pavucontrol
       - playerctl
+      - okular
+      - arandr
+      - breeze-cursor-theme
+      - deluge
+      - fd-find
+      - gnome-keyring
+      - gnome-keyring-pam
+      - light
+      - mpv
+      - network-manager-applet
+      - nextcloud-client
+      - openvpn
+      - pcmanfm
+      - setxkbmap
+      - sxiv
+      - terminus-fonts
+      - terminus-fonts-console
+      - tlp
+      - xbacklight
+      - xev
+      - xmodmap
     state: latest
-    become: yes
+  become: yes
 

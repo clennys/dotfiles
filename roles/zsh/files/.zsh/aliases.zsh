@@ -28,3 +28,4 @@ alias ungz='tar -xvzf'
 alias bat='cat /sys/class/power_supply/BAT0/capacity'
 alias transfer='~/Nextcloud/other/transfer'
 alias vpn-uzh='sudo nmcli connection up uzh --ask'
+[[ "$TERM" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"

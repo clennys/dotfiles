@@ -18,7 +18,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 # export MANPAGER="nvim -c 'set ft=man' -"
 export GOPATH=$HOME/go
 export SSH_AUTH_SOCK
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.14.1.1-5.fc35.x86_64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc36.x86_64
 
 export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 gnome-keyring-daemon --daemonize --login
@@ -30,11 +30,10 @@ then
 	xss-lock slock&
 fi
 
-autorandr -c
 
 nm-applet&
 
-nitrogen --restore&
+
 nextcloud --background&
 systemctl --user import-environment DISPLAY&
 clipmenud&
@@ -43,3 +42,6 @@ xset r rate 350 60
 light -S 5
 
 low_battery.sh&
+blueman-applet&
+
+autorandr -c&

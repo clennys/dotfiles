@@ -6075,3 +6075,4998 @@ mkdir templates
 mv files/*.cfg templates
 ls
 cd templates
+cp ~/University/hpc_esc_401_solutions/exercise_session_01/ex01.md Nextcloud/notes/university/HPC/01
+cp ~/University/hpc_esc_401_solutions/exercise_session_02/ex02.md Nextcloud/notes/university/HPC/02
+cp ~/University/hpc_esc_401_solutions/exercise_session_03/ex03.md Nextcloud/notes/university/HPC/03
+cd 
+cd dwm-6.3
+v config.def.h
+sh ~/.local/bin/ddown.sh
+v config.def.h
+rm config.h
+sudo make install
+v config.def.h
+rm config.h
+sudo make clean install
+cd 
+cd .dotfiles/roles/suckless
+ls
+v tasks/main.yml
+ls
+cd
+rm -rf .source/neovim
+cd .source
+ls
+rm -rf neovim
+sudo rm neovim
+sudo rm -rf neovim
+cd
+./.dotfiles/bin/dotfiles
+bat
+cd University/hpc_esc_401_solutions
+ls
+cd exercise_session_06
+ls
+v exercise02/jacobi.cpp
+ssh ela
+cat ~/.config/suckless/dwm-nightly/config.h
+cat ~/.config/suckless/dwm-6.3/config.h
+amixer set Master 5%+
+amixer set Master 20%+
+cd University/hpc_esc_401_solutions
+ls
+git pull
+git reset --hard HEAD~2
+git reset --hard HEAD~1
+git push -f
+ssh ela
+light -A 5
+light -A 25
+xrdb .Xresources-homeoffice
+xrandr | grep "DP-1-"
+xrandr | grep "DP-1- connected"
+xrandr | grep "DP-1- connected"
+xrandr | grep "DP-1-1.3 connected"
+v .xprofile
+v .xinitrc
+v .xinitrc
+v .xinitrc
+v .xprofile
+v .xprofile
+v .xinitrc
+killall xinit
+zathura Nextcloud/notes/notability/04_FS22/HPC/Lecture/hpc\ lecture\ 4\ -\ BASH\ and\ C.pdf&
+xrandr | grep "DP-1-* connected"
+xrandr | grep "DP-1-. connected"
+xrandr | grep "DP-1-. connected"
+xrandr | grep "DP-1-.?.?. connected"
+xrandr | grep "DP-1-.?.? connected"
+xrandr | grep "DP-1-. connected"
+xrandr | grep "DP-1-[0-9]\.?[0-9]? connected"
+xrandr | grep "DP-1-[0-9].?[0-9]? connected"
+xrandr | grep "DP-1-[0-9]\.?[0-9]? connected"
+xrandr | grep "DP-1"
+xrandr | grep "^DP-1"
+xrandr | grep "^DP-1"
+xrandr | grep "^DP-1 connected"
+xrandr | grep "^DP-1* connected"
+xrandr | grep "^DP-1 connected"
+xrandr | grep "^DP-1[a-z][0-9] connected"
+xrandr | grep '^DP-1* connected'
+xrandr | grep '^DP-1-* connected'
+xrandr | grep '^DP-1-.+ connected'
+xrandr | grep '^DP-1 connected'
+xrandr | grep '^DP-1*. connected'
+xrandr | grep '^DP-1 connected'
+xrandr | grep '^DP-1*+ connected'
+xrandr | grep '^DP-1*+'
+xrandr | grep '^DP-1*+ connected'
+xrandr | grep '^DP-1* connected'
+xrandr | grep '^DP-1-* connected'
+xrandr | grep '^DP-1\|connected'
+xrandr | grep '^DP-1\| connected'
+xrandr | grep '^DP-1-\| connected'
+xrandr | grep '^DP-1' | grep "connected" 
+xrandr | grep '^DP-1' | grep " connected" 
+xrandr | grep "^DP-1" | grep " connected" 
+startx
+xrandr --auto
+v .xprofile
+xrandr | grep "^DP-1" | grep " connected" 
+xrandr | grep "DP-1" 
+cat ~/.dotfiles/roles/X/files/.xprofile
+v .xprofile
+killall xinit
+ls
+unzip OneDrive_1_10-04-2022.zip -d University/SoPra/RaveWave-server/doc/diagrams/src
+pic ../../diagrams/milestone02/ClassDiagram.png&
+startx
+sudo systemctl shutdown
+sudo shutdown now
+sudo pip install autorandr
+autorandr
+xrandr -- 
+autorandr --save laptop
+autorandr --save lounge-1
+sudo pip install ueberzug
+ls
+autorandr --change
+v .xprofile
+v .xprofile
+ls -a
+cd .config/autorandr
+ls
+v laptop/config
+v lounge-1
+touch postswitch
+v postswitch
+v postswitch
+chmod 755 postswitch
+ls
+v postswitch
+cd
+cd .dotfiles
+v README
+v README.md
+cd
+ls
+cd University/SoPra/RaveWave-server
+ls
+git pull
+cd
+cd .config/nvim
+ls
+v init.lua
+v init.lua
+v init.lua
+ls
+v init.lua
+cd
+cd University/SoPra/RaveWave-server
+ls
+git checkout -b wb_protocol
+ls
+mkdir doc
+cd doc
+ls
+mkdir -p websockets/protocol
+cd ..
+ls
+cd doc
+ls
+ls
+mkdir diagrams
+ls
+cd diagrams
+ls
+mkdir milestone01
+mkdir src
+ls
+ls
+cd ..
+ls
+cd ..
+cd doc
+cd websockets
+ls
+cd protocol
+touch template.json
+cd ..
+cd ..
+cd ..
+git add .
+git commit -m "added documentation"
+git push
+git push --set-upstream origin wb_protocol
+ls
+cd doc/diagrams
+ls
+mv milestone01 milestone02
+cd ..
+ls
+cd websockets
+ls
+cd protocol
+ls
+v template.json
+ls
+pic ../../diagrams/milestone02/ClassDiagram.png&
+pic ../../diagrams/milestone02/ClassDiagram.png&
+ls
+v template.json
+ls
+mkdir Host-Server
+mkdir Player-Server
+ls
+v template.json
+cp template.json Host-Server/gameSetup.jso
+cd Host-Server
+mv gameSetup.jso gameSetup.json
+v gameSetup.json
+ls
+cd ..
+ls
+cp template.json Host-Server/question.json 
+cd Host-Server
+ls
+mv gameSetup.json GameSetup.json
+mv question.json Question.json
+ls
+touch Leaderboard.json
+rm Leaderboard.json
+cp ../template.json Leaderboard.json
+ls
+cp ../template.json NextRound.json
+cp ../template.json StartGame.json
+cp ../template.json EndGame.json
+ls
+v Leaderboard.json
+cp Leaderboard.json EndGame.json
+v EndGame.json
+ls
+v NextRound.json
+ls
+v Question.json
+v Question.json
+ls
+ls
+v Question.json
+v Question.json
+v GameSetup.json
+v Leaderboard.json
+v NextRound.json
+v Question.json
+v StartGame.json
+ls
+cd ..
+ls
+ls
+v Host-Server/StartGame.json
+ls
+cd Host-Server
+ls
+v NextRound.json
+v Question.json
+ls
+v EndGame.json
+ls
+cd ..
+ls
+mv Host-Server/* .
+ls
+rmdir Host-Server
+rmdir Player-Server
+ls
+cp template.json Answer.json
+cp template.json Result.json
+v Answer.json
+v Question.json
+v Result.json
+ls
+cd ..
+ls
+cd ..
+ls
+git add .
+git commit -m "add protocol template"
+git push
+cd
+ls
+rm OneDrive_1_10-04-2022.zip
+ls
+ls
+cd .dotfiles/roles
+ls
+mkdir autorandr
+cd ..
+cd roles
+ls
+mkdir autorandr/files
+cp -r ~/.config/autorandr/* autorandr/files
+cd
+cp .xprofile .dotfiles/roles/X/files
+cp .xinitrc .dotfiles/roles/X/files
+ls
+cd .dotfiles/roles/X
+ls
+cd files
+ls
+rm homeoffice_closed.sh homeoffice_open.sh
+ls
+cd ..
+ls
+cd files
+ls
+rm laptop.sh
+cd ..
+ls
+v tasks/main.yml
+cd
+cd .dotfiles
+fpush
+ls
+cd 
+ls
+autorandr --change
+autorandr -s laptop
+autorandr -s laptop --force
+autorandr -c
+autorandr -c
+autorandr -c
+autorandr -c
+autorandr -c -d
+autorandr -c --debug
+killall xinit
+ls
+v .Xresources-homeoffice
+v .xprofile
+autorandr --save home
+ls
+cd .config/autorandr
+ls
+autorandr -h
+autorandr -l laptop
+autorandr -c
+autorandr -c
+killall xinit
+autorandr -c
+autorandr --change
+autorandr --change --debug
+xrandr --fb 3840x2160 --output eDP-1 --off --output DP-1-1.3 --crtc 0 --gamma 1.0:1.0:1.0 --mode 3840x2160 --pos 0x0 --primary --rate 60.00 --reflect normal --rotate normal --set non-desktop 0
+cd .config/autorandr
+ls
+ls
+v home/setup
+v home/config
+autorandr --change
+cd ..
+ls
+cd autorandr/laptop
+ls
+v config
+cd ..
+ls
+v lounge-1/setup
+v lounge-1/config
+cd
+autorandr -l laptop
+autorandr -c
+killall xinit
+v .xprofile
+v .Xresources-homeoffice
+xrdb .Xresources-homeoffice
+startx
+startix
+startx
+startx
+v .Xresources-homeoffice
+v .Xresources
+ls
+ls
+v .xinitrc
+killall xinit
+cd .config/autorandr
+ls
+v postswitch
+xrdb .Xresources-homeoffice
+cd
+v .xinitrc
+killall xinit
+[ xrandr | grep "^DP-1" | grep " connected" ]\
+
+!  xrandr | grep "^DP-1" | grep " connected" \
+
+! xrandr | grep "^DP-1" | grep " connected" \
+
+! [ xrandr | grep "^DP-1" | grep " connected" ]\
+
+! [[ xrandr | grep "^DP-1" | grep " connected" ]]\
+
+ [[ xrandr | grep "^DP-1" | grep " connected" ]]\
+
+autorandr -c
+ls
+v .Xresources
+ls
+v .xprofile
+ls
+cp .xinitrc .dotfiles/roles/X/files
+cp -r ~/.config/autorandr/* .dotfiles/roles/autorandr/files
+ls
+cd .config/autorandr
+ls
+touch predetect
+chmod 755 predetect
+v predetect
+./predetect
+ls
+v postswitch
+ls
+cp postswitch home
+v home/postswitch
+cd 
+cp .xprofile .dotfiles/roles/X/files
+cp -r ~/.config/autorandr/* .dotfiles/roles/autorandr/files
+cd .dotfiles/roles/autorandr/files
+ls
+cd home/postswitch
+ls
+cd postswitch
+ls
+cd home
+ls
+cd
+cd .dotfiles
+git add .
+git commit -m "added home setup"
+git push
+autorandr -c
+ls
+cd 
+cd .config/autorandr
+ls
+cd home
+ls
+cd
+startx
+startx
+cat .Xresources
+cd Projects/lua/neovim/orca.nvim/lua/
+cat orca.lua
+sudo shutdown now
+killall xinit
+nitrogen --restore
+sudo dnf update -y
+cd .config/autorandr
+ls
+v postswitch
+v home/postswitch
+cd ..
+ls
+v mimeapps.list
+ xrandr | grep "^DP-1" | grep " connected"
+echo $(xrandr | grep "^DP-1") | grep " connected"
+xrandr | grep "^DP-1" | grep " connected"
+echo $(xrandr | grep "DP-1") | grep " connected"
+! echo $(xrandr | grep "^DP-1") | grep " connected"
+ echo $(xrandr | grep "^DP-1") | grep " connected"
+ls
+v .xprofile
+killall xinit
+startx
+startx
+cp .xprofile .dotfiles/roles/X/files
+v .xinitrc
+sudo shutdown now
+cd Downloads/firefox
+ungz tikzit-linux.tar.gz
+ls
+cd tikzit
+ls
+./install-local.sh
+cd bin
+ls
+./tikzit
+sudo dnf install tixzit
+sudo dnf install tikzit
+sudo shutdown now
+autorandr -c
+	p;
+lss
+ls
+v .xprofile
+blueman-applet
+sudo bluetoothctl connect 00:09:A7:5E:AC:A1
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+ls
+v .xprofile
+htop
+sudo systemctl bluetooth restart
+sudo systemctl restart bluetooth.service
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+cd .config/suckless/dwm-6.3
+ls
+rm config.h
+v config.def.h
+sudo make clean install
+nmcli connection up uzh
+pgcli postgresql://s18919688:cB8LLUIhUT@pg.ifi.uzh.ch:5432/s18919688
+sudo bluetoothctl scan on
+autorandr [c]
+autorandr -c
+cd .config/autorandr/home
+ls
+v postswitch
+cd ..
+ls
+cp predetect home
+cd home
+ls
+v predetect
+cd
+v .xprofile
+sudo dnf update -y
+ls
+xrdb -merge .Xresources-homeoffice
+ls
+xrdb -merge .Xresources
+top
+htop
+dnf search flameshot
+dnf search pip
+dnf list installed | less
+neofetch
+pfetch
+sudo dnf install neofetch
+dnf search exa
+ls
+cd .dotfiles/roles
+ls
+cd
+cd .dotfiles/roles/system
+ls
+v tasks/main.yml
+v tasks/main.yml
+cd ..
+ls
+v languages/tasks
+ls
+git add .
+git commit -m "startet to add basic packages and autorandr"
+git push
+neofetch
+bat
+bat
+v .xprofile
+v .xinitrc
+cd .dotfiles/roles/autorandr
+ls
+mkdir tasks 
+v tasks/main.yml
+cd ..
+ls
+cd languages
+ls 
+mkdir tasks 
+v tasks/main.yml
+sudo systemctl restart bluetooth.service
+sudo systemctl restart bluetooth.service
+ls
+sudo dnf update -y\\
+
+cd .config/autostart
+ls
+cd 
+cd 
+cd University/SoPra/RaveWave-server
+git pull
+bat
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+pgcli postgresql://s18919688:cB8LLUIhUT@pg.ifi.uzh.ch:5432/s18919688
+pgcli postgresql://s18919688:cB8LLUIhUT@pg.ifi.uzh.ch:5432/s18919688
+pgcli postgresql://s18919688:cB8LLUIhUT@pg.ifi.uzh.ch:5432/s18919688
+nmcli connection up uzh
+pgcli postgresql://s18919688:cB8LLUIhUT@pg.ifi.uzh.ch:5432/s18919688
+autorandr -c
+autorandr -c
+ls
+cd .config/suckless/dwm-6.3
+ls
+v config.h
+rm config.h
+v config.def.h
+v config.def.h
+sudo make clean install
+ls
+cd
+cd .config/autorandr/home
+ls
+v predetect
+cd
+sudo dnf update -y\
+
+cd .config/autorandr
+ls
+cd home
+ls
+v predetect
+killall xinit
+autorandr -s lounge-3
+autorandr -c
+ls
+ls
+c
+autorandr -s lounge-3 --force
+nitrogen --restore
+startx
+sudo dnf update -y
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+ls 
+cd .dotfiles/roles/autorandr
+ls
+v tasks/main.yml
+cd 
+cd University/SoPra/RaveWave-server
+git pull --all
+git checkout -b SpotifyAPI
+git checkout SpotifyAPI
+git pull
+ls
+cd src/main/java/ch/uzh/ifi/hase/soprafs22
+ls
+v websockets/WebSocketConfiguration.java
+v websockets/MessageController.java
+ls
+xmodmap ~/.Xmodmap
+ls
+v websockets
+ls
+git reset --hard HEAD~
+ls
+git pull
+ls
+cd
+cd .config/suckless/slock
+ls
+v config.def.h
+ls
+v config.h
+cd ..
+ls
+v st/config.h
+ls
+rm -rf slock
+cd 
+cd .dotfiles/roles/suckless/files
+ls
+v slock/config.h
+cd ..
+ls
+v files/st
+v tasks/main.yml
+ls
+ls
+cp -r files/slock ~/.config/suckless
+cd suckless
+ls
+cd slock
+ls
+v config.h
+rm config.h
+v config.def.h
+cd Downloads/firefox
+ls
+mv cv_dennys_huber-compressed.pdf cv_dennys_huber.pdf
+nitrogen --restore
+autorandr -s headquarters
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo dnf update -y
+sudo bluetoothctl reconnect 60:AB:D2:8D:B0:B0
+sudo nmcli connection up uzh
+sudo nmcli connection up uzh --ask
+sudo nmcli connection up uzh --ask
+sudo nmcli connection up
+sudo nmcli connection up uzh
+sudo dnf install nmtui
+sudo dnf install NetworkManager-tui
+nmtui
+cat .ssh/id_rsa.pub
+cat .ssh/id_rsa.pub
+ssh root@188.166.82.141
+ssh root@188.166.82.141
+pgcli postgresql://s18919688:cB8LLUIhUT@pg.ifi.uzh.ch:5432/s18919688
+sudo systemctl suspend
+autorandr -s headquarters
+autorandr -c
+sudo dnf update -y
+ls
+cd workspace
+ls
+cd
+ls
+cd ..
+cd
+rm -rf workspace
+ls
+sudo nmcli connection up Pixel6
+ls
+alias
+ls
+cd University/SoPra/RaveWave-server
+git pull
+git fetch
+git checkout wb_protocol
+ls
+cd src/main/java/ch/uzh/ifi/hase/soprafs22
+ls
+cd service
+ls
+ls
+touch WebSocketService.java
+v WebSocketService.java
+cd ..
+ls
+git merge SpotifyAPI
+git reset --hard HEAD~
+ls
+git pull
+ls
+rm service/WebSocketService.java
+ls
+git merge SpotifyAPI
+git push 
+ls
+cd cd service
+cd service
+ls
+v WebSocketService.java
+cd ..
+git add .
+ls
+git commit -m "added backbone for sending messages via websocktes"
+git push
+v .local/bin/dklay.sh
+ln .local/bin/colorpicker.sh
+ln .local/bin/colorpicker.sh
+ls  .local/bin/colorpicker.sh
+ls -l .local/bin/colorpicker.sh
+sudo bluetoothctl reconnect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo nmcli wifi scan on
+sudo nmcli device wifi scan on
+nmcli dev wifi
+dnf search nmcli
+killall firefox
+sudo dnf install openmpi
+zathura /home/dennys/Nextcloud/other/transfer/HPC_2022_ex07\ \(4\).pdf&
+sudo nmcli connection up Pixel6
+sudo dnf update -y
+cd University/SoPra
+cd ..
+cd hpc_esc_401_solutions
+cd ..
+cd hpc_esc_401
+git pull -g
+git pull
+ls
+git reset --hard HEAD
+ls
+cd ..
+ls
+cd hpc_esc_401_solutions
+ls
+mkdir exercise_session_07
+cd exercise_session_07
+ls
+touch mpi_notes.md
+v mpi_notes.md
+killall xinit
+startx
+mv Downloads/firefox/apic-3.0.6.AppImage .local/bin/apic
+chmod 755 .local/bin/apic
+./.local/bin/apic
+bat
+sudo dnf update -y
+ping google.com
+sudo dnf update -y
+ls
+rm colorpicker.sh
+ls
+cd University/SoPra/RaveWave-server
+git checkout SpotifyAPI
+ls
+git pull
+java --version
+./gradlew build -x check
+./gradlew build -x check
+./gradlew build -x check
+./gradlew build -x check
+pic ~/University/SoPra/RaveWave-server/doc/diagrams/milestone02/ClassDiagram.png&
+v .xprofile
+ls
+cd University/SoPra/RaveWave-server
+ls
+git checkout -b eval
+ls
+cd src/main/java/ch/uzh/ifi/hase/soprafs22
+ls
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+nitrogen --restore
+ls
+autorandr -s lounge-1
+autorandr -s lounge-0
+ls
+cd ..
+tree soprafs22
+ls
+cd soprafs22/utils
+ls
+v Evaluator.java
+git add .
+git commit -m "evaluator"
+git push
+git push --set-upstream origin eval
+ls
+v Evaluator.java
+rm \\ 
+git add .
+git commit -m "evaluator ready for testing"
+git commit --amend
+git push
+cd University/SoPra/RaveWave-server
+fpush
+cd src/main/java/ch/uzh/ifi/hase/soprafs22/constant
+v RoundDuration.java
+sudo dnf update -y
+zathura /home/dennys/Nextcloud/other/transfer/HPC_2022_ex07\ \(4\).pdf&
+cd University/hpc_esc_401
+git pull
+ls
+cd exercise_session_07/ring_and_deadlocks/
+ls
+v ring.c
+cd ..
+cd ..
+cd ~/University/hpc_esc_401_solutions/exercise_session_07
+ls
+cp -r ~/University/hpc_esc_401/exercise_session_07/* .
+ls
+cd ring_and_deadlocks
+ls
+cd ..
+ls
+mkdir playground
+mv mpi_notes.md playground
+cd poisson_MPI
+cd ..
+cd playground
+ls
+dnf search mpirun
+cd
+mv Downloads/firefox/openmpi-4.1.3.tar.bz2 .source
+cd .source
+ls
+tar -jxf openmpi-4.1.3.tar.bz2
+ls
+rm openmpi-4.1.3.tar.bz2
+ls
+cd openmpi-4.1.3
+ls
+./configure
+make -j4 all
+sudo make install
+mpirun
+zathura /home/dennys/Nextcloud/other/transfer/HPC_2022_ex07\ \(4\).pdf&
+gcc whoami.c -o whoami
+mpicc whoami.c -o whoami
+mpirun -n 7 ./whoami
+mpirun -n 3 ./whoami
+mpicc whoami.c -o whoami
+mpirun -n 3 ./whoami
+mpirun -n 4 ./whoami
+mpirun -n 5 ./whoami
+mpirun -n 6 ./whoami
+mpirun -n 7 ./whoami
+mpirun -n 6 ./whoami
+mpicc whoami.c -o whoami
+mpirun -n 6 ./whoami
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+uname -r
+cd University/hpc_esc_401_solutions/exercise_session_07/playground
+ls
+touch whoami.c
+v whoami.c
+cd ..
+zathura /home/dennys/Nextcloud/other/transfer/HPC_2022_ex07\ \(4\).pdf&
+ls
+cd ring_and_deadlocks
+ls
+v ring.c
+v ring.c
+v ring.c
+v ring.c
+mpicc ring.c -o ring
+mpirun ./ring
+v ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -4 ./ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+gf
+fg
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+mpirun -n 6 ./ring
+fg
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+v ring.c
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+fg
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+mpirun -n 6 ./ring
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+mpirun -n 6 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+mpirun -n 4 ./ring
+v ring.c
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 4 ./ring
+mpirun -n 6 ./ring
+v ring.c
+mpicc ring.c -o ring
+mpirun -n 6 ./ring
+v ring.c
+fg
+ls
+mv ring.c ring_blocking.c
+cp ring_blocking.c ring_non_blocking.c
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+fg
+fg
+v ~/Downloads/firefox/mpi_ringtopo.c
+cp ~/Downloads/firefox/mpi_ringtopo.c .
+ls
+mpicc mpi_ringtopo.c -o mpi-ring
+mpirun -n 4 ./mpi-ring
+v mpi_ringtopo.c
+mpicc mpi_ringtopo.c -o mpi-ring
+mpirun -n 4 ./mpi-ring
+v mpi_ringtopo.c
+mpicc mpi_ringtopo.c -o mpi-ring
+mpirun -n 4 ./mpi-ring
+v mpi_ringtopo.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+fg
+fg
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+mpirun -n 4 ./rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+mpirun -n 6 ./rnb
+cd ..
+ls
+git add .
+git commit -m "solve ring exercise"
+git push
+git pull
+git pull -f
+ls
+cd ..
+l-
+ls
+git add .
+git commit -m "solve ring exercise"
+git pull
+git config pull.rebase true
+git config pull.rebase false
+git pull
+v exercise_session_07/poisson_MPI/Makefile
+v exercise_session_07/poisson_MPI/init.cpp
+git add .
+git commit -m "solve ring exercise"
+git push
+cd exercise_session_07/ring_and_deadlocks
+ls
+rm \\ 
+ls
+mv mpi_ringtopo.c mpi-ring ../playground
+cd .
+cd ..
+l
+git add .
+git commit -m "moved files around"
+git psuh
+git push
+ls
+mkdir pi
+cd pi
+ls
+touch pi.c
+cp ../playground/whoami.c .
+ls
+rm pi.c
+mv whoami.c pi.c
+v pi.c
+mv pi.c leibnitz.c
+ls
+cd ..
+cd ..
+git add .
+git commit -m "ex02"
+git push
+cd
+ls
+fg
+cd
+cd .config/nvim
+ls
+v init.lua
+v lua/general/map.lua
+v init.lua
+cd
+cd University/SoPra/RaveWave-server
+git checkout master
+git fetch
+git pull
+ls
+./gradlew build -x check
+./gradlew build
+./gradlew cleanTest && ./gradlew test
+git checkout -b ravewaver
+ls
+./gradlew cleanTest && ./gradlew test
+ls
+v newfile
+v settings.gradle
+ls
+v build.gradle
+cd src/main/java/ch/uzh/ifi/hase/soprafs22/
+ls
+v constant/GameMode.java
+v constant/PlaybackDuration.java
+v constant/RoundDuration.java
+v constant/SongPool.java
+cd ..
+ls
+cd soprafs22
+ls
+v entity/RaveWaver.java
+cd ..
+cd soprafs22
+ls
+v controller/RaveWaverController.java
+cd rest/dto/
+ls
+touch RaveWaverPutDTO.java
+touch LoginPostDTO.java
+v LoginPostDTO.java
+v RaveWaverGetDTO.java
+ls
+rm \\
+\\
+\\ 
+ls
+cd ..
+ls
+cd ..
+ls
+cd service
+ls
+v RaveWaverService.java
+cd ..
+git add .
+git commit -m "added dtos and mapper for ravewaver. ravewaverservice wip"
+git push
+git push --set-upstream origin ravewaver
+sudo dnf update -y
+ls
+git add .
+git commit "fixed import statements"
+git commit -m "fixed import statements"
+git psuh
+git push
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+zathura Downloads/firefox/Students.pdf
+./gradlew build
+./gradlew build
+./gradlew build
+./gradlew build
+./gradlew build
+./gradlew build && ./gradlew bootrun
+./gradlew build && ./gradlew bootrun
+./gradlew build && ./gradlew bootrun
+sudo dnf update -y
+alia
+alias
+vpn-uzh
+bat
+cd University/hpc_esc_401_solutions/exercise_session_07/
+ls
+cd ring_and_deadlocks
+ls
+v ring.c
+v ring_blocking.c
+mpirun -n 6 ./ring
+mpirun -n 4 ./ring
+v ring_non_blocking.c
+mpicc ring_non_blocking.c -o rnb
+mpirun -n 4 ./rnb
+mpirun -n 6 ./rnb
+v ring_non_blocking.c
+fg
+cd ..
+ls
+v ring_and_deadlocks/ring_blocking.c
+mpirun -n 7 ./ring
+mpirun -n 6 ./ring
+mpirun -mn 6 ./ring
+mpirun -np 6 ./ring
+cd ring_and_deadlocks
+ls
+mpirun -np 6 ./ring
+mpirun -np 15 ./ring
+mpirun -np 7 ./ring
+gd
+cd
+ls
+mv hpc* $TRANS
+ls
+cd University/hpc_esc_401_solutions/exercise_session_07/
+ls
+cd poisson_MPI
+ls
+ls
+cd ..
+ls
+cp -r poisson_MPI poisson_MPI_I poisson_MPI_II
+cp -r poisson_MPI poisson_MPI_I
+mv poisson_MPI poisson_MPI_II
+cd poisson_MPI_I
+ls
+v mpi_module.cpp
+cd .source
+ls
+cd neovim
+git pull
+make -j4 all
+make
+ls
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+cd .config/nvim/lua/plugins/nvim-cmp.lua
+cd .config/nvim/lua/plugins
+v nvim-cmp.lua
+v nvim-cmp.lua
+v nvim-tree.lua
+v nvim-tree.lua
+v nvim-tree.lua
+cd University/hpc_esc_401_solutions/exercise_session_07/poisson_MPI_I
+ls
+ls
+v jacobi.cpp
+v mpi_module.cpp
+v mpi_module.cpp
+v mpi_module.cpp
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect default
+systemctl restart bluetooth.service
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo dnf update -y
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+ssh ela
+cd University/hpc_esc_401_solutions/exercise_session_07/poisson_MPI_I
+v mpi_module.cpp
+make
+cp ~/University/hpc_esc_401/exercise_session_07/poisson_MPI/Makefile .
+ls
+make
+ls
+v main.cpp
+v main.cpp
+ls
+v jacobi.cpp
+v mpi_module.cpp
+cd ..
+cd pi
+mpicc pi.c -o pi
+ls
+mpicc leibnitz.c -o pi
+mpirun -np 6 ./pi
+v leibnitz.c
+mpicc leibnitz.c -o pi
+mpirun -np 6 ./pi
+v leibnitz.c
+time mpirun -np 6 ./pi
+time mpirun -np 6 ./pi
+time mpirun -np 3 ./pi
+time mpirun -np 2 ./pi
+time mpirun -np 6 ./pi
+cd ..
+ls
+cd poisson_MPI_I
+ls
+v jacobi.cpp
+v mpi_module.cpp
+sudo shutdown now
+git add .
+git commit -m "almost done"
+git push
+git checkout master
+git merge ravewaver
+git push
+./gradlew build && ./gradlew bootrun
+ls
+git pull
+killall xinit
+xrandr
+xrandr
+xrandr
+killall xinit
+nitrogen --restore
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+systemctl restart bluetooth.service
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo dnf
+cd University/hpc_esc_401_solutions/exercise_session_07/poisson_MPI_I
+tls
+ls
+make
+fpush
+cd ..
+fpush
+ls
+cd poisson_MPI_I
+ls
+v mpi_module.cpp
+ls
+cd ..
+ls
+cd ring_and_deadlocks
+ls
+cp ring_blocking.c ring_blocking_barrier.c
+v ring_blocking_barrier.c
+mpicc ring_blocking_barrier.c -o rbb
+mpirun -np 6 ./rbb
+v ring_blocking_barrier.c
+cd ..
+cd poisson_MPI_I
+ls
+v jacobi.cpp
+v mpi_module.cpp
+cd ..
+fpush
+cd poisson_MPI_I
+v jacobi.cpp
+cd ..
+ fpush
+git pull
+ls
+cd poisson_MPI_I
+ls
+rm \=\\ \\ 
+ls
+v jacobi.cpp
+ls
+ssh ela
+cd ela
+ssh ela
+startx
+startx
+git checkout -b testing
+mkdir -p src/test/java/ch/uzh/ifi/hase/soprafs22/
+cd src/test/java/ch/uzh/ifi/hase/soprafs22
+ls
+mkdir controller repository rest service websocket
+ls
+cd University/hpc_esc_401_solutions/exercise_session_07/poisson_MPI_I
+ls
+v main.cpp
+cd ..
+fpush
+cd poisson_MPI_I
+v mpi_module.cpp
+ls
+cd ..
+ls
+rm -rf poisson_MPI_II
+ls
+cd ring_and_deadlocks
+ls
+cp ring_blocking.c ring_cart.c
+v ring_cart.c
+mpicc ring_cart.c -o rc
+mpirun -np 6 ./rc
+v ring_cart.c
+mpicc ring_cart.c -o rc
+mpirun -np 6 ./rc
+mpirun -np 4 ./rc
+mpirun -np 5 ./rc
+v ring_cart.c
+mpirun -np 3 ./rc
+mpicc ring_blocking.c -o rb
+mpirun -np 3 ./rb
+ls
+v ring_cart.c
+mpicc ring_cart.c -o rc
+mpirun -np 3 ./rc
+mpirun -np 5 ./rc
+v ring_cart.c
+mpicc ring_cart.c -o rc
+mpirun -np 5 ./rc
+mpirun -np 6 ./rc
+mpicc ring_blocking_barrier.c -o rbb
+mpirun -np 5 ./rbb
+v ring_blocking_barrier.c
+cd ..
+ls
+cd poisson_MPI_I
+ls
+v jacobi.cpp
+cd ..
+fpush
+v ring_and_deadlocks/ring_non_blocking.c
+nvim --noplugin
+sudo dnf install vim
+vim
+cd 
+cd .config/nvim
+ls
+v init.lua
+v init.lua
+v init.lua
+v init.lua
+cd lua/general
+v opt.lua
+cd
+v
+cd University/hpc_esc_401_solutions/exercise_session_07/poisson_MPI_I
+ls
+v mpi_module.cpp
+cd ..
+ls
+fpusdh
+fpush
+v poisson_MPI_I/cpi_mpi_sbatch
+v poisson_MPI_I/cpi_mpi_sbatch
+ls
+ls
+touch ex07.md
+v ex07.md
+ls
+cd pi
+ls
+mpirun -np 5 ./pi
+v leibnitz.c
+mpicc leibnitz.c -o pi
+mpirun -np 5 ./pi
+cd ..
+ls
+v ex07.md
+git pull
+v perftools/nbody+29348-449s/rpt-files/RUNTIME.rpt
+fpush
+nitrogen --restore
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+killall xinit
+v
+cd .config/nvim
+ls
+v lua/general/opt.lua
+v lua/general/opt.lua
+v lua/general/opt.lua
+ls
+ls
+cd ..
+ls
+cp -r nvim ~/.dotfiles/roles/neovim/files/
+ls
+sudo systemctl suspend
+startx
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+mv HPC_2022_ex08.pdf $TRANS
+ls
+rm Nextcloud/recordings/*
+rm -rf Nextcloud/recordings/*
+ls
+zathura $TRANS/HPC_2022_ex08.pdf&
+sudo systemctl suspend
+killall xinit
+nitrogen --restore
+a1123581321
+fpush
+nitrogen --restore
+autorandr -s lounge-3
+autorandr -s lounge-4
+sudo dnf update -y
+fpush
+fpush
+git checkout master
+git pull
+git checkout testing
+git merge master
+git add .
+git commit -m "merged with master"
+git push
+git merge origin/answerFixer
+
+fpush
+fpush
+git checkout master
+git pull
+git checkout testing
+git merge master
+git add .
+git commit -m "merged with master"
+git push
+git merge origin/answerFixer
+
+fpush
+fpush
+git checkout master
+git pull
+git checkout testing
+git merge master
+git add .
+git commit -m "merged with master"
+git push
+git merge origin/answerFixer
+
+./gradlew cleanTest && ./gradlew test
+./gradlew build && ./gradlew bootrun
+./gradlew build && ./gradlew bootrun
+./gradlew cleanTest && ./gradlew test
+ ./gradlew test
+./gradlew cleanTest
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew build && ./gradlew bootrun
+./gradlew build && ./gradlew bootrun
+./gradlew build && ./gradlew bootrun
+./gradlew build && ./gradlew bootrun
+git add .
+git commit -m 
+git commit -m "push it to the limit #78 #82"
+git push
+fpush
+git checkout master
+git pull
+git checkout -b tester
+./gradlew build && ./gradlew bootrun
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+fpush
+git push --set-upstream origin tester
+ls
+cd University/hpc_esc_401_solutions/exercise_session_07/poisson_MPI_I
+ls
+cd
+c
+cd University
+ls
+touch todo.md
+mv todo.md notes.md
+ls
+v notes.md 
+cd 
+cd .config/nvim
+v lua/general/opt.lua
+v lua/general/opt.lua
+cd .
+v init.lua
+v init.lua
+v init.lua\
+v init.lua\\
+
+v lua/general/opt.lua
+v lua/general/opt.lua
+sudo bluetoothctl connect 2C:BE:EB:06:AD:47
+sudo bluetoothctl connect 2C:BE:EB:06:AD:47
+sudo bluetoothctl connect 2C:BE:EB:06:AD:47
+sudo systemctl restart bluetooth.service 
+nitrogen --restore
+killall xinit
+killall xinit
+git pull
+git checkout master
+git pull
+./gradlew cleanTest && ./gradlew test
+nitrogen --restore
+sudo systemctl restart bluetooth.service 
+systemctl restart bluetooth.service\\
+
+startx
+startx
+pkill zathura
+git pull
+ls
+sudo dnf update -y
+rm .local/bin/Obsidian
+ls
+setxkbmap us altgr-intl
+cd .local/bin
+ls
+./dklay.sh
+zathura $TRANS/HPC_2022_ex08.pdf&
+vpn-uzh
+cd .ssh
+ls
+cat id_rsa.pub
+ssh ubuntu@     172.23.173.161 
+ssh ubuntu@172.23.173.161 
+ssh -X ubuntu@172.23.173.161 
+ssh -X ubuntu@172.23.173.161 
+ssh -X ubuntu@172.23.173.161 
+ssh -X ubuntu@172.23.173.161 
+sudo dnf remove docker \\
+                  docker-client \\
+                  docker-client-latest \\
+                  docker-common \\
+                  docker-latest \\
+                  docker-latest-logrotate \\
+                  docker-logrotate \\
+                  docker-selinux \\
+                  docker-engine-selinux \\
+                  docker-engine\
+
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager \\
+    --add-repo \\
+    https://download.docker.com/linux/fedora/docker-ce.repo\
+
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo systemctl start docker\
+
+cd
+cd University/hpc_esc_401
+git pull
+cd ..
+ls
+cd hpc_esc_401_solutions
+git pull
+ssh -X ubuntu@172.23.173.161 
+git pull
+cd exercise_session_08
+ls
+touch Dockerfile
+ls
+v Dockerfile
+cd poisson_MPI
+ls
+make clean
+make && ./main.cpp
+make && ./main
+make clean
+make && ./main
+ls
+cd output
+cd ..
+ls
+cd..
+cd ..
+ls
+cd poisson_SERIAL
+ls
+make clean
+cd output
+ls
+rm *.csv *.png
+ls
+cd ..
+ls
+cd ..
+ls
+v Dockerfile
+docker build --tag poisson .
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+pip install numpy
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+docker build --tag poisson .
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+ls
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+docker images
+sudo docker images
+ls
+docker run
+docker run poisson
+sudo docker run poisson
+v Dockerfile
+cd poisson_SERIAL
+ls
+cd output
+ls
+cd ..
+cd ..
+ls
+v Dockerfile
+docker build --tag poisson .
+sudo docker build --tag poisson .
+docker run poisson
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+docker run poisson
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+docker run poisson
+sudo docker run poisson
+ls
+cd poisson_SERIAL
+ls
+make
+cd ..
+ls
+v Dockerfile
+sudo docker build --tag poisson .
+docker run poisson
+sudo docker run poisson
+v Dockerfile
+sudo docker run poisson
+sudo docker build --tag poisson .
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+sudo docker build --tag poisson .
+docker run poisson
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+docker run poisson
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+sudo docker run poisson
+v Dockerfile
+sudo docker run poisson
+sudo docker build --tag poisson .
+ls
+v Dockerfile
+sudo docker build --tag poisson .
+docker run poisson
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+sudo docker run poisson
+v Dockerfile
+sudo docker build --tag poisson .
+v Dockerfile
+ssh -X ubuntu@172.23.173.161 
+ssh -X ubuntu@172.23.173.161 
+cd University/hpc_esc_401_solutions/exercise_session_08
+ls
+cd poisson_SERIAL
+ls
+make clean
+cd ..
+ls
+docker run poisson
+sudo docker run poisson
+sudo systemctl start docker\
+
+sudo docker run poisson
+sudo docker build --no-cache --tag poisson .
+sudo docker build --no-cache=true --tag poisson .
+v Dockerfile
+v Dockerfile
+v Dockerfile
+sudo docker build --no-cache=true --tag poisson .
+sudo docker run poisson
+ls
+v Dockerfile
+sudo docker build --tag poisson .
+sudo docker run poisson
+ls
+cd poisson_SERIAL
+ls
+v output/plot.py
+ls
+v output/plot.py
+docker build --tag poisson .
+sudo docker build --tag poisson .
+cd ..
+sudo docker build --tag poisson .
+sudo docker run poisson
+v output/plot.py
+v poisson_SERIAL/output/plot.py
+sudo docker build --tag poisson .
+sudo docker run poisson
+v poisson_SERIAL/output/plot.py
+sudo docker build --tag poisson .
+sudo docker run poisson
+v poisson_SERIAL/output/plot.py
+sudo docker run poisson -e DISPLAY=$DISPLAY
+sudo docker run  -e DISPLAY=$DISPLAY poisson
+v poisson_SERIAL/output/plot.py
+cd ..
+cd exercise_session_08
+ls
+sudo docker build --tag poisson .
+sudo docker run  -e DISPLAY=$DISPLAY poisson
+sudo docker run  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw poisson
+sudo dnf install xserver-utils
+sudo dnf search xserver-utils
+sudo dnf install xorg-x11-sever-utils
+sudo dnf install xorg-x11-server-utils
+sudo dnf install Xorg-x11-server-utils
+sudo dnf search xorg-x11
+sudo dnf search xorg-x11-server
+sudo dnf search xorg-x11-utils
+sudo dnf search xorg-x11-util
+sudo dnf search xorg-x11
+sudo dnf search xorg
+sudo docker run  -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix poisson
+xhost +
+sudo docker run  -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix poisson
+ls
+xhost --
+xhost -
+ls
+mkdir docker_output
+ls
+zathura $TRANS/HPC_2022_ex08.pdf&
+cd poisson_SERIAL
+ls
+cd output
+ls
+cd ..
+ls
+cd ..
+ls
+xhost +local:docker
+sudo docker run  -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix poisson
+ls
+sudo docker run  -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --mount docker_output poisson 
+sudo docker run  -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --mount=docker_output poisson 
+sudo docker run  -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd)/docker_output:/poisson_SERIAL/output poisson 
+sudo docker run  -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd)/poisson_SERIAL/output:/poisson_SERIAL/output poisson 
+ls
+cd poisson_SERIAL/output
+ls
+pic test.png
+ls
+cd ..
+ls
+cd output
+ls
+rm *.csv *.png
+rm -f *.csv *.png
+ls
+cd ..
+ls
+cd ..
+ls
+cd docker_output
+ls
+cd ..
+ls
+rm -rf docker_output
+ls
+docker tag poisson:latest dennyshuber/poisson:latest
+sudo docker tag poisson:latest dennyshuber/poisson:latest
+sudo docker push dennyshuber/poisson:latest
+sudo docker push dennyshuber/poisson:poisson\
+
+sudo docker push dennyshuber/poisson:latest
+docker login
+sudo docker login
+sudo docker push dennyshuber/poisson:latest
+ls
+fpush
+ssh -X ubuntu@172.23.173.161 
+vpn-uzh
+ssh -X ubuntu@172.23.173.161 
+ls
+v ex08.md
+cd 
+cd .config/nvim
+ls
+v lua/general/opt.lua
+cd
+cd University/hpc_esc_401_solutions/exercise_session_08
+ls
+v ex08.md
+fpush
+ls
+v ex08.md
+fg
+fpush
+zathura $TRANS/sheet08.pdf&
+autorandr -c
+ssh -X ubuntu@172.23.173.161 
+vpn-uzh
+ssh -X ubuntu@172.23.173.161 
+sudo dnf install okular
+sudo dnf install evince
+sudo dnf search gnome-desktop3
+sudo dnf install evince
+mv hpc\ lecture\ 10\ -\ MapReduce.pdf $TRANS
+ls
+ssh -X ubuntu@172.23.173.161 
+zathura $TRANS/hpc\ lecture\ 10\ -\ MapReduce.pdf&
+nitrogen --restore
+zathura $TRANS/sheet08.pdf&
+killall xinit
+startx
+killall xinit
+killall xinit
+killall xinit
+startx
+zathura $TRANS/sheet08.pdf&
+zathura $TRANS/ai09a.pdf&
+git pull
+git stas
+git stash
+git stash clean
+git stash clear
+git pull
+ls
+ls
+git pull
+git switch -c UsersTopTracks
+sudo systemctl su
+sudo systemctl suspend
+ssh -X ubuntu@172.23.173.161 
+vpn-uzh
+ssh -X ubuntu@172.23.173.161 
+mv HPC_2022_ex09.pdf $TRANS
+ls
+zathura /home/dennys/Nextcloud/other/transfer/HPC_2022_ex09.pdf&
+cd .ssh
+ls
+v config
+zathura $TRANS/hpc\ lecture\ 10\ -\ MapReduce.pdf&
+v config
+ssh hadoop
+ssh hadoop
+ssh hadoop
+scp -r hadoop:/home/ubuntu/hpc_esc_401/exercise_session_09/ University/hpc_esc_401_solutions/exercise_session_09
+cd University/hpc_esc_401_solutions/exercise_session_09
+ls
+mv exercise_session_09 ..
+cd ..
+mv exercise_session_09 exercise_session_09_old
+mv exercise_session_09_old/exercise_session_09 .
+ls
+rm -rf exercise_session_09_old
+fpush
+ls
+v README.md
+cd ..
+ls
+cd hpc_esc_401_solutions
+ls
+zathura $TRANS/HPC_2022_ex09.pdf &
+zathura $TRANS/hpc\ lecture\ 10\ -\ MapReduce.pdf&
+cd University/hpc_esc_401_solutions/exercise_session_08
+cd ..
+cd ..
+cd hpc_esc_401
+git pull
+cp -r exercise_session_09 ../hpc_esc_401_solutions
+cd ..
+cd hpc_esc_401_solutions/exercise_session_09
+ls
+touch output_mapreduce.txt
+v output_mapreduce.txt
+cd ..
+fpush
+ssh hadoop
+kitty +kitten ssh user@host\
+
+kitty +kitten ssh hadoop\
+
+fpush
+git push --set-upstream origin UsersTopTracks
+ssh hadoop
+kitty +kitten ssh user@host\
+
+kitty +kitten ssh hadoop\
+
+ssh hadoop
+kitty +kitten ssh user@host\
+
+kitty +kitten ssh hadoop\
+
+ssh hadoop
+kitty +kitten ssh user@host\
+
+kitty +kitten ssh hadoop\
+
+zathura $TRANS/DBS2022a_20220507.pdf&
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+systemctl restart bluetooth.service\
+
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo dnf update -y
+mv Downloads/torrents/archlinux-2022.05.01-x86_64.iso Projects/vm/pool
+zathura $TRANS/DBS2022a_20220507.pdf&
+bat
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc35.x86_64\
+
+killall xinit
+zathura $TRANS/DBS2022a_20220507.pdf&
+zathura $TRANS/sol07.pdf&
+echo '[[ "$TERM" == "xterm-kitty" ]] && alias ssh="kitty +kitten ssh"' >> .zsh/aliases.zsh
+v .zsh/aliases.zsh
+zsh
+v .xprofile
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc35.x86_64\
+
+nitrogen --restore
+startx
+cd University/SoPra
+ls
+mkdir spotifytest
+cd spotifytest
+sudo dnf install gradle
+wget https://downloads.gradle-dn.com/distributions/gradle-7.0-bin.zip 
+unzip gradle-7.0-bin.zip
+sudo mv gradle-7.0 /usr/local/gradle \
+
+sudo neovim /etc/profile.d/gradle.sh
+sudo nvim /etc/profile.d/gradle.sh
+source /etc/profile.d/gradle.sh 
+gradle --version 
+ls
+rm gradle-7.0-bin.zip
+gradle init
+ls
+v settings.gradle
+v app/build.gradle
+git add .
+git commit -m "#90 #91 task for previous week"
+git push
+./gradlew build && ./gradlew bootrun
+./gradlew build && ./gradlew run
+./gradlew build && ./gradlew run
+./gradlew build && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew run
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo dnf remove blueman
+blueman-manager
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo dnf install blueman
+git fetch
+git pull
+fpush
+git checkout storeAuthenticationTokeninRaveWaver
+git pull
+git checkout UsersTopTracks
+git stash
+git pull
+git checkout UsersTopTracks
+git checkout UsersTopTracks
+git merge storeAuthenticationTokeninRaveWaver
+zathura $TRANS/.pdf&
+zathura $TRANS/DBS2022a_20220507.pdf&
+sudo dnf update -y
+zathura $TRANS/DBS2022a_20220507.pdf&
+autorandr [c]
+killall xinit
+startx
+killall xinit
+ls
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+zathura $TRANS/DBS2022a_20220507.pdf&
+killall eclipse
+htop
+v Projects/lua/neovim/orca.nvim/lua/orca.lua
+startx
+zathura $TRANS/DBS2022a_20220507.pdf&
+sudo dnf install eclipse
+sudo dnf install eclipse
+sudo dnf install code
+sudo dnf search eclipse
+sudo dnf copr enable dusansimic/eclipse -y\
+
+sudo dnf install eclipse\
+-y
+sudo dnf install eclipse\
+-y
+sudo dnf install eclipse -y\
+
+cat /etc/fedora-release
+sudo dnf upgrade --refresh
+sudo dnf system-upgrade download --releasever=36
+sudo dnf install dnf-plugin-system-upgrade -y
+sudo dnf system-upgrade download --releasever=36
+sudo dnf system-upgrade reboot
+ls
+cat /etc/fedora-release
+ls
+mv hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf $TRANS
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf&
+vifm
+ls
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+zathura $TRANS/DBS2022a_20220507.pdf&
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+zathura $TRANS/DBS2022a_20220507.pdf&
+bc
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+v .xprofile
+sudo apic
+apic
+killall xinit
+cd University/SoPra/RaveWave-server
+ls
+./gradlew build -xtest && ./gradlew run
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc35.x86_64\
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.3.0.7-1.fc36.x86_64\
+
+./gradlew build -xtest && ./gradlew run
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+ /usr/bin/env /usr/lib/jvm/java-17-openjdk-17.0.3.0.7-1.fc36.x86_64/bin/java -XX:+ShowCodeDetailsInExceptionMessages @/tmp/cp_859zynvtea4i9gospdan5vl3y.argfile ch.uzh.ifi.hase.soprafs22.Application 
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+git stash
+fpush
+git push
+git pull
+git add .
+git push
+git stash
+git checkout master
+git pull
+npm install -g wscat
+sudo npm install -g wscat
+wscat -c "ws://localhost:8080/ws"
+wscat -c "wss://localhost:8080/ws"
+wscat -c "ws://localhost:8080/ws"
+wscat -c ws://localhost:8080/ws
+zathura $TRANS/HPC_2022_ex09.pdf&
+ /usr/bin/env /usr/lib/jvm/java-17-openjdk-17.0.3.0.7-1.fc36.x86_64/bin/java -XX:+ShowCodeDetailsInExceptionMessages @/tmp/cp_8upcrp5h4p3at0ornpmh6uv19.argfile ch.uzh.ifi.hase.soprafs22.Application 
+ /usr/bin/env /usr/lib/jvm/java-17-openjdk-17.0.3.0.7-1.fc36.x86_64/bin/java -XX:+ShowCodeDetailsInExceptionMessages @/tmp/cp_8upcrp5h4p3at0ornpmh6uv19.argfile ch.uzh.ifi.hase.soprafs22.Application -xtest
+./gradlew build -xtest && ./gradlew bootrun
+cd University/hpc_esc_401_solutions/exercise_session_09
+ls
+git pull
+touch README.md
+v README.md
+fpush
+cd University/SoPra/
+git clone https://github.com/sopra-fs22-group-17/RaveWave-server.git
+git clone https://github.com/sopra-fs22-group-17/RaveWave-server.git server
+ls
+cd server
+./gradlew build -xtest && ./gradlew bootrun
+git checkout UsersTopTracks
+git stash
+git checkout UsersTopTracks
+git stash
+git checkout UsersTopTracks
+git checkout UsersTopTracks -f
+./gradlew build -xtest && ./gradlew bootrun
+startx
+./gradlew build -xtest && ./gradlew bootrun
+git stash pop
+fpush
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun debug
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+v .xprofile
+killall xinit
+cd University/SoPra
+ls
+rm -rf server RaveWave-server
+ls
+git clone https://github.com/sopra-fs22-group-17/RaveWave-server.git
+ls
+cd RaveWave-server/.git
+ls
+v config
+cd ..
+ls
+git push
+sudo systemctl suspend
+sudo dnf update -y
+cd University/SoPra/RaveWave-server
+l
+ls
+v export
+mv export ..
+ls
+cd ..
+ls
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+fpush
+git checkout master
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+git stash
+git checkout UsersTopTracks
+git checkout UsersTopTracks -f
+ls
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+./gradlew build -xtest && ./gradlew bootrun --stacktrace
+git switch -c fetchUserTopTracks
+ls
+./gradlew build -xtest && ./gradlew bootrun
+export clientSecret="b2aeb3094dbc4aa59bc39766f6afcb9d"
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+git add .
+git commit -m "#90 #95"
+git push
+git push --set-upstream origin fetchUserTopTracks
+git push --set-upstream origin fetchUserTopTracks
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+export SPRING_DATASOURCE_URL="jdbc:postgresql://ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/d45pqsd5o59hab"
+export SPRING_DATASOURCE_USERNAME="qcpozdbdnycqtt"
+export SPRING_DATASOURCE_PASSWORD="37b8806bdb53f24cae87d24e55fb3b6f717f04746b97ef8766b3f26343bbf792"
+./gradlew build -xtest && ./gradlew bootrun
+fpush
+ls
+touch export
+killall xinit
+startx
+startx
+lspci | grep VGA
+cd .source
+ls
+mkdir nvidia-drivers
+cp ../Downloads/firefox/NVIDIA-Linux-x86_64-510.68.02.run .
+ls
+mv NVIDIA-Linux-x86_64-510.68.02.run nvidia-drivers
+cd nvidia-drivers
+ls
+chmod +x NVIDIA-Linux-x86_64-510.68.02.run
+sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig
+killall xinit
+sudo bash .source/nvidia-drivers/NVIDIA-Linux-x86_64-510.68.02.run
+sudo bash .source/nvidia-drivers/NVIDIA-Linux-x86_64-510.68.02.run
+sudo reboot
+../export
+chmod 700 ../export
+../export
+./gradlew build -xtest && ./gradlew bootrun
+export SPRING_DATASOURCE_URL="jdbc:postgresql://ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/d45pqsd5o59hab"
+export SPRING_DATASOURCE_USERNAME="qcpozdbdnycqtt"
+export SPRING_DATASOURCE_PASSWORD="37b8806bdb53f24cae87d24e55fb3b6f717f04746b97ef8766b3f26343bbf792"
+./gradlew build -xtest && ./gradlew bootrun
+nitrogen --restore
+cd University/SoPra/RaveWave-server
+ls
+cd ..
+v export
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+autorandr [c]
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+killall xinit
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+killall xinit
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+killall xinit
+git add .
+git commit -m "#99 #98"
+git push
+startx
+mv HPC_2022_ex10\ \(2\).pdf $TRANS
+ls
+sudo dnf update -y
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf&
+ssh ela
+v .ssh/config
+ssh ela
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf&
+ssh ela
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf&
+sudo b
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+git add .
+git commit -m "#99"
+git push
+nitrogen --restore
+./gradlew build -xtest && ./gradlew bootrun
+cd ..
+ls
+./export
+cd RaveWave-server
+ls
+./gradlew build -xtest && ./gradlew bootrun
+cd ..
+export SPRING_DATASOURCE_PASSWORD="37b8806bdb53f24cae87d24e55fb3b6f717f04746b97ef8766b3f26343bbf792"
+cat export
+mv export RaveWave-server
+ls
+cd RaveWave-server
+./export
+./gradlew build -xtest && ./gradlew bootrun
+mv export ..
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+sudo dnf update -y
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf&
+zathura $TRANS/hpc\ lecture\ 10\ -\ MapReduce.pdf&
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf -\ MapReduce.pdf&
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf
+killall xinit
+ls -a
+v .dwm.log
+nitrogen --restore
+cd University/SoPra/RaveWave-server
+ls
+cd ..
+ls
+v export
+startx
+git pull
+git checkout tinkerBella
+git pull
+git checkout fetchUserTopTracks
+git merge tinkerBella
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+git add .
+git commit -m "#99"
+git push
+git push
+.l
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+git add .
+git commit -m "#99, #100"
+git push
+git add .
+git commit -m "#99, #100"
+git push
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf&
+fg
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf&
+fg
+fg
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf&
+zathura $TRANS/hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf&
+cd University/SoPra
+ls
+cd ..
+cd hpc_esc_401_solutions
+git pull
+cd ..
+cd hpc_esc_401
+ls
+git pull
+cd ..
+ls
+cd hpc_esc_401_solutions
+ls
+cd exercise_session_10
+ls
+mv cuda cuda_ex02
+cp -r ~/University/hpc_esc_401/exercise_session_10/cuda cuda_ex03
+ls
+cd cuda_ex03
+ls
+v cpi_cuda.cu
+ls
+v cuda_run
+chmod 700 cuda_run
+ls
+./cuda_run
+v cuda_run
+fg
+./cuda_run
+./cuda_run | wc -l
+v ./cuda_run
+v cuda_run
+v cpi_cuda.cu
+ls
+cd .. 
+ls
+cd cuda_ex03
+cp ../cuda_ex02/cpi_cuda_sbatch .
+ls
+v cpi_cuda_sbatch
+cd ..
+fpush
+ssh ela
+cd hpc_esc_401_solutions
+git pull
+cd exercise_session_10/cuda_ex03
+ls
+touch plot.py
+touch data.txt
+v data.txt
+v plot.py
+py
+v plot.py
+python
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf&
+ssh ela
+cd University/hpc_esc_401_solutions/exercise_session_10
+ls
+git pull
+v cuda_ex03/cuda_run
+v .xprofile
+ls
+light -S 20
+light -S 50
+light -S 100
+light -S 50
+git checkout master
+git pull
+git checkout -b fixNullExceptions
+mv hpc\ lecture\ 12\ -\ OpenACC.pdf $TRANS
+zathura $TRANS/hpc\ lecture\ 12\ -\ OpenACC.pdf&
+ssh ela
+ssh ela
+ssh ela
+top
+killall firefox
+top
+cd Downloads/firefox
+ls
+unzip sheet10-programming.zip
+v databasestructure.png
+cd sheet10-programming
+ls
+py data.py
+py learning.py
+ls
+py learning.py
+ls
+zip ex10.zip *
+ls
+unzip ex10.zip
+ls
+cd __pycache__
+ls
+cd ..
+ls
+killall xinit
+startx
+sudo dnf update -y
+nvidia-settings
+lsmod | grep nvidia
+sudo dnf install akmod-nvidia
+sudo reboot
+sudo dnf remove akmod-nvidia
+cd .source
+ls
+cd nvidia-drivers
+killall xinit
+cd .source/nvidia-drivers
+ls
+./NVIDIA-Linux-x86_64-510.68.02.run
+sudo ./NVIDIA-Linux-x86_64-510.68.02.run
+lsmod | grep nouveau
+startx
+lspci |grep -E "VGA|3D"
+uname -r
+cd .source/nvidia-drivers
+ls
+chmod +x NVIDIA-Linux-x86_64-470.129.06.run
+sudo dnf update --exclude=kernel*
+sudo dnf update --exclude=kernel*
+su
+su
+killall xinit
+startx
+cd .source/nvidia-drivers
+ls
+su
+killall xinit
+og
+su
+cd /etc/X11
+cat xorg.conf.nvidia
+cat xorg.conf.nvidia xorg.conf.nvidia-xconfig-original
+ls
+v Xresources
+v xorg.conf xorg.conf.old
+mv xorg.conf xorg.conf.old
+sudo mv xorg.conf xorg.conf.old
+killall xinit
+cd /etc/X11
+cat xorg.conf.nvidia
+cat xorg.conf.nvidia xorg.conf.nvidia-xconfig-original
+ls
+v Xresources
+v xorg.conf xorg.conf.old
+mv xorg.conf xorg.conf.old
+sudo mv xorg.conf xorg.conf.old
+killall xinit
+cd /etc/X11
+cat xorg.conf.nvidia
+cat xorg.conf.nvidia xorg.conf.nvidia-xconfig-original
+ls
+v Xresources
+v xorg.conf xorg.conf.old
+mv xorg.conf xorg.conf.old
+sudo mv xorg.conf xorg.conf.old
+killall xinit
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo dnf install steam
+sudo dnf remove steam
+sudo dnf autoremove
+sudo dnf install mupdf
+mupdf $TRANS/04_designHL_SE22_final.pdf
+startx
+bc
+bc
+sudo dnf update -y
+cd Downloads/torrents
+ls
+mpv halo.s01e09.1080p.web.h264-cakes.mkv
+cd University/hpc_esc_401_solutions/exercise_session_10
+ls
+git pull
+cd cuda_ex03
+ls
+rm plot.py data.txt
+ls
+cd ..
+ls
+v README.md
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf &
+gf
+fg nvim
+ls
+cp cuda_ex03
+cd cuda_ex03
+ls
+cp output.log data.txt
+v data.txt
+v plot.py
+v data.txt
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+ls
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v output.log
+v output.log
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+v plot.py
+py plot.py
+cd ..
+v README.md
+fpush
+killall xinit
+nitrogen --restore
+sudo dnf update -y
+nmtui
+ping google.com
+xrandr
+xrandr --output DP-1-1 --scale 2x2
+xrandr --output DP-1-1 --scale 1x1
+xrandr --output DP-1-1 --scale 2x2
+xrandr --output DP-1-1 --scale 1x1
+startx
+ping google.com
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+git stash
+git pull
+git pull
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+cd ..
+ls
+mv export RaveWave-server
+cd RaveWave-server
+ls
+source export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+source export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+ls
+mv export ..
+ls
+git status
+git add .
+git commit -m "#112"
+git push
+git checkout fixNullExceptions
+ls
+git stasth
+git merge master
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+mv ../export c
+mv c export
+source export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+# server.port=8080\
+# spring.datasource.url=${SPRING_DATASOURCE_URL}\
+# spring.datasource.username=${SPRING_DATASOURCE_USERNAME}\
+# spring.datasource.password=${SPRING_DATASOURCE_PASSWORD}\
+# spring.datasource.driver-class-name=org.postgresql.Driver\
+# spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect\
+# spring.jpa.hibernate.ddl-auto=update\
+# server.error.include-message=always\
+server.port=8080\
+# Enabling the H2-Console (local and remote)\
+spring.h2.console.enabled=true\
+spring.h2.console.settings.web-allow-others=true\
+# Password for the H2-Console\
+spring.datasource.url=jdbc:h2:mem:testdb\
+spring.datasource.driver-class-name=org.h2.Driver\
+spring.datasource.username=sa\
+spring.datasource.password=\
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect\
+server.error.include-message=always
+echo $clientSecret
+echo $redirectURL
+./gradlew build -xtest && ./gradlew bootrun
+git stash
+ls
+git checkout master
+./gradlew build -xtest && ./gradlew bootrun
+git checkout -b fixLikedSong
+git checkout -b fixLikedSong
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+\:w
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+killall xinit
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+./gradlew build -xtest && ./gradlew bootrun
+source export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+cd University/SoPra/RaveWave-client
+npm run dev
+npm run dev
+startx
+cd University/SoPra/RaveWave-client
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+./gradlew build -xtest && ./gradlew bootrun
+source export
+./gradlew build -xtest && ./gradlew bootrun
+ls
+mv export ..
+ls
+git add .
+git commit -m "#99 create dummy player"
+git push
+git push --set-upstream origin fixLikedSong
+fpush
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+\:w
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+git add .
+git commit -m "#99 added log statements"
+git push
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+sudo dnf update -y
+ls
+cd University/SoPra/RaveWave-client
+git pull
+npm run dev
+npm run 
+npm install
+npm run
+ls
+v tsconfig.json
+npm run
+npm run serve -s build
+npm serve -s build
+npm serve run
+npm run dev
+ls
+v static.json
+v package.json
+npm install
+npm install --force
+npm run dev
+npm run dev
+cd ..
+rm -rf RaveWave-client
+git clone git@github.com:sopra-fs22-group-17/RaveWave-client.git
+cd RaveWave-client
+npm install --force
+npm run dev
+node -v
+v package.json
+npm run dev
+v package.json
+npm run dev
+npm run dev --openssl-legacy-provider
+sudo dnf install nvm
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+zsh
+nvm install 16.13.0
+npm run dev
+nvm -h
+nvm ls
+ls
+v app.json
+v _jsconfig.json
+v Procfile
+v tsconfig.json
+cd src
+ls
+v App.tsx
+v index.tsx
+v api/getDomain.ts
+clear
+npm run dev
+git stash
+git checkout SheenaGitDure
+npm run dev
+v api/RestApi.ts
+fg
+cd ..
+ls
+cd src/components/views
+v GameController.tsx
+sudo dnf install latexmk
+cd Downloads/firefox
+ls
+unzip cv_dennys_huber.zip
+ls
+unzip cv_dennys_huber.zip cv_dennys
+unzip -h
+unzip cv_dennys_huber.zip -d cv
+cd cv
+ls
+ls -a
+latexmk
+ls
+ls
+v LatexMk
+mv LatexMk latexmkrc
+latexmk -pdf
+ls
+sudo mkdir /usr/local/share/latexmk
+sudo mv LatexMk /usr/local/share/latexmk
+ls
+unzip AI\ Assignments.zip -d ai
+ls
+cd ai
+latexmk -pdf
+ls
+sudo dnf install texlive-scheme-full\
+
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+cd University/praktikum-exanic/Projektbeschreibung
+zathura main.pdf
+fg
+zathura main.pdf&
+v main.tex
+latexmk -pdf -pvc && zathura main.pdf&
+ls
+v run
+v run
+chmod +x run
+./run
+fg
+fg
+v run
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+cd Downloads/firefox/cv/ai
+latexmk -pdf
+v main.log
+pdflatex main.tex
+pdflatex main.tex -shell-escape
+cd ..
+ls
+rm latexmkrc
+latexmk -pdf
+sudo dnf install lualatex
+cd ..
+ls
+rm -rf *
+cd ..
+ls
+cd ..
+cd University
+ls
+mkdir praktikum-exanic
+cd praktikum-exanic
+ls
+git clone https://git.overleaf.com/628ab930c9ddb4146c66f253
+ls
+cd 628ab930c9ddb4146c66f253
+ls
+ls -a
+cd ..
+ls
+mv 628ab930c9ddb4146c66f253 Projektbeschreibung
+cd Projektbeschreibung
+ls
+rm frog.jpg
+ls
+rm sample.bib
+ls
+latexmk -pdf
+v main.log
+zathura main.pdf
+ls
+v main.tex
+rm main.aux main.fdb_latexmk main.fls main.log main.out
+ls
+v main.tex
+v main.tex
+latexmk -pdf -pvc
+zathura main.pdf
+v main.tex
+fg
+fg
+v main.tex
+latexmk -pdf -pvc
+latexmk -h
+latexmk -pdf -pvc -quiet
+cd University/praktikum-exanic/Projektbeschreibung
+v main.tex
+fpush
+v main.tex
+git status
+./gradlew build -xtest && ./gradlew bootrun
+git reset --hard HEAD
+ls
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+git stash clear
+git merge master
+git checkout master
+git pull
+git checkout fixLikedSong
+git merge master
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+cd University/SoPra
+cd RaveWave-client
+ls
+npm run dev
+sudo dnf update -y
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+mpv Downloads/torrents/Top\ Gun\ :\ Maverick\ \(2022\)\ 1080p\ HDCAM\ x264\ AAC\ -\ QRips.mkv&
+cd .config/nvim/lua
+ls
+cd utils
+ls
+v nvim_func.lua
+cd
+cd University/praktikum-exanic/Projektbeschreibung
+latexmk -pdf -pvc -quiet&
+cd ..
+cd Projektbeschreibung
+ls
+zathura main.pdf&
+v main.tex
+ls
+fg
+fg
+ls
+latexmk -pdf -pvc -quiet 2> /dev/null&
+zathura main.pdf&
+v main.tex
+ls
+fg
+fg
+ls
+fg
+fg
+zathura ~/Downloads/torrents/Top\ Gun\ :\ Maverick\ \(2022\)\ 1080p\ HDCAM\ x264\ AAC\ -\ QRips.mkv&
+fg
+mpv ~/Downloads/torrents/Top\ Gun\ :\ Maverick\ \(2022\)\ 1080p\ HDCAM\ x264\ AAC\ -\ QRips.mkv&
+latexmk -pdf -pvc -quiet > /dev/null 2>&1
+latexmk -pdf -pvc -quiet > /dev/null 2>&1&
+zathura main.pdf&
+v main.tex
+ls
+v run
+v run
+./run
+fg
+fg
+mpv ~/Downloads/torrents/Top\ Gun\ :\ Maverick\ \(2022\)\ 1080p\ HDCAM\ x264\ AAC\ -\ QRips.mkv&
+mpv ~/Downloads/torrents/Top\ Gun\ :\ Maverick\ \(2022\)\ 1080p\ HDCAM\ x264\ AAC\ -\ QRips.mkv&
+cd University/praktikum-exanic/Projektbeschreibung
+ls
+./run
+v main.tex
+fpush
+nitrogen --restore
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+ssh ela
+zathura /home/dennys/Nextcloud/other/transfer/HPC_2022_ex10\ \(2\).pdf&
+ls
+mv HPC_2022_ex11.pdf $TRANS
+fg
+zathura $TRANS/HPC_2022_ex11.pdf&
+zathura $TRANS/hpc\ lecture\ 12\ -\ OpenACC.pdf&
+cd University/hpc_esc_401
+git pull
+ls
+cp -r exercise_session_11 ../hpc_esc_401_solutions
+cd ..
+cd hpc_esc_401_solutions
+ls
+cd exercise_session_11
+ls
+cd ..
+fpush
+cd exercise_session_11/
+ls
+v axpy
+cd axpy
+ls
+v axpy_openacc.cpp
+sudo dnf search openacc
+ls
+v Makefile
+ls
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf&
+zathura $TRANS/HPC_2022_ex10\ \(2\).pdf&
+cd
+cd University/SoPra
+ls
+v export
+lscpu
+lshw
+lspci
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+git add p
+git add .
+cd University/SoPra/RaveWave-client
+git pull
+git checkout master
+git stash clear
+git checkout master
+git stash
+git stash clear
+git checkout master
+git pull
+ls
+git checkout NewSheenaBranch
+npm run dev
+git pull
+npm run dev
+cd University/SoPra/RaveWave-server
+ls
+fpush
+git checkout master
+cd src/main/java/ch/uzh/ifi/hase/soprafs22/spotify
+ls
+v *.java
+git add .
+git commit -m "#117"
+cd University/SoPra/RaveWave-server
+cd ..
+ls
+v export
+cd University/SoPra/RaveWave-client
+ls
+npm run dev
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+cd University/SoPra/RaveWave-server
+git push
+git pull
+git push
+cd ..
+rm -rf RaveWave-server
+git clone git@github.com:sopra-fs22-group-17/RaveWave-server.git
+cd RaveWave-server
+ls
+cd src/main/java/ch/uzh/ifi/hase/soprafs22/spotify
+ls
+v *.java
+git add .
+git commit -m "#117"
+git push
+./gradlew build -xtest && ./gradlew bootrun
+cd ..
+cd ..
+ls
+cd
+cd University/SoPra/RaveWave-server
+ls
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+v ../export
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+git checkout -b fixImage
+ls
+v README.md
+fpush
+git push --set-upstream origin fixImage
+lspci | grep -i nvidia
+sudo dnf install kernel-devel-$(uname -r) kernel-headers-$(uname -r)
+ls
+rm hpc\ lecture\ 1\ -\ Introduction\ to\ HPC.pdf
+rm OneDrive_1_25-05-2022.zip
+unzip OneDrive_2_25-05-2022.zip hpc
+unzip OneDrive_2_25-05-2022.zip -d hpc
+ls
+cd hpc
+ls
+pdfunite hpc\ lecture\ 1\ -\ Introduction\ to\ HPC.pdf hpc\ lecture\ 2\ -\ Compilers\ and\ Batch\ Queues.pdf hpc\ lecture\ 3\ -\ MPI\ and\ OpenMP.pdf hpc\ lecture\ 4\ -\ BASH\ and\ C.pdf hpc\ lecture\ 5\ -\ Introduction\ to\ Parallel\ Programming.pdf hpc\ lecture\ 6\ -\ OpenMP.pdf hpc\ lecture\ 7\ -\ MPI.pdf hpc\ lecture\ 8\ -\ Benchmarking.pdf hpc\ lecture\ 9\ -\ Cloud\ and\ Containers.pdf hpc\ lecture\ 10\ -\ MapReduce.pdf hpc\ lecture\ 11\ -\ Hybrid\ Computing\ Introduction.pdf hpc\ lecture\ 12\ -\ OpenACC.pdf hpc\ lecture\ 13\ -\ CUDA.pdf hpc_complete.pdf
+ls
+zathura hpc_complete.pdf
+mv hpc_complete.pdf $TRANS
+cd ..
+ls
+rm -rf OneDrive_2_25-05-2022.zip hpc
+ls
+mv hpc\ lecture\ 13\ -\ CUDA.pdf $TRANS
+cd $TRANS
+ls
+cd
+zathura $TRANS/hpc\ lecture\ 13\ -\ CUDA.pdf&
+nmtui
+killall nextcloud
+nextcloud
+killall xinit
+startx
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+ls
+v .zshrc
+cd $TRANS/ai
+ls
+pdfunite *.pdf ai_complete.pdf
+zathura ai_complete.pdf
+killall xinit
+cd .local/bin
+ls
+rm
+dnf serach zotero
+dnf search zotero
+cd
+cd Downloads/firefox
+ls
+tar -xf Zotero-6.0.8_linux-x86_64.tar.bz2
+ls
+cd Zotero_linux-x86_64
+ls
+./zotero
+./zotero
+cd ..
+ls
+sudo mkdir /opt/zotero
+ls
+sudo mv Zotero_linux-x86_64 /opt/zotero
+sudo cp /opt/zotero/Zotero_linux-x86_64/zotero-bin ~/.local/bin/zotero
+chmod +x ~/.local/bin/zotero
+sudo chmod +x ~/.local/bin/zotero
+cd
+cd .local/bin
+./zotero
+cd /opt/zotero/Zotero_linux-x86_64
+ls
+./zotero-bin
+sudo cp zotero ~/.local/bin/zotero
+rm ~/.local/bin/zotero
+ln -s zotero ~/.local/bin
+cd 
+cd .local/bin
+ls
+rm
+./zotero
+rm zotero
+ls
+cd /opt/zotero
+ls
+cd Zotero_linux-x86_64
+ls
+./set_launcher_icon
+./zotero
+ln -s zotero ~/.local/bin
+ls
+cd
+cd .local/bin
+ls
+rm zotero
+ln -s zotero /opt/zotero/Zotero_linux-x86_64/zotero
+ls
+ls
+ln -s /opt/zotero/Zotero_linux-x86_64/zotero .
+ls
+startx
+git checkout master
+ls
+git pull
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew cleanTest && ./gradlew test
+git checkout -b tastyTesting
+ls
+mpv Downloads/torrents/Star.Trek.Strange.New.Worlds.S01E01.1080p.WEB.H264-PECULATE\[rarbg\]&
+mpv Downloads/torrents/Star.Trek.Strange.New.Worlds.S01E02.1080p.WEB.H264-CAKES\[rarbg\]&
+mpv ~/Downloads/torrents/Star.Trek.Strange.New.Worlds.S01E03.1080p.WEB.H264-CAKES\[rarbg\]&
+zathura /home/dennys/Nextcloud/other/transfer/ai/ai_complete.pdf&
+nitrogen --restore
+nitrogen --restore
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+\:w
+\:w
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+killall xinit
+startx
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: '1.7.4'\
+testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.7.4'
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+fpush
+    git push --set-upstream origin tastyTesting
+./gradlew cleanTest && ./gradlew test
+cd University/SoPra
+ls
+v export
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+source ./../export
+./gradlew cleanTest && ./gradlew test
+gradle test --tests SpotifyServiceTest
+gradle test --tests RaveWaverServiceTest
+gradle test --tests RaveWaverServiceTest
+gradle test --tests RaveWaverServiceTest
+gradle test --tests SpotifyServiceTest
+gradle test --tests SpotifyServiceTest
+gradle test --tests PlayerServiceTest
+./gradlew build
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+ls
+cd src/test/
+ls
+mkdir json
+cd json
+wget https://raw.githubusercontent.com/spotify-web-api-java/spotify-web-api-java/develop/src/test/fixtures/requests/data/personalization/simplified/GetUsersTopTracksRequest.json
+ls
+cd ..
+ls
+./gradlew cleanTest && ./gradlew test
+cd ..
+cd ..
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+fpush
+ls
+cd src/test/json
+wget https://raw.githubusercontent.com/spotify-web-api-java/spotify-web-api-java/develop/src/test/fixtures/requests/data/playlists/GetPlaylistRequest.json
+ls
+wget https://raw.githubusercontent.com/spotify-web-api-java/spotify-web-api-java/develop/src/test/fixtures/requests/data/library/GetUsersSavedTracksRequest.json
+ls
+fpush
+./gradlew cleanTest && ./gradlew test
+cd ..
+cd ..
+cd ..
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+cd src/test/json
+ls
+rm GetPlaylistRequest.json
+wget https://raw.githubusercontent.com/spotify-web-api-java/spotify-web-api-java/develop/src/test/fixtures/requests/data/library/GetUsersSavedTracksRequest.json
+ls
+rm GetUsersSavedTracksRequest.json.1
+ls
+wget https://github.com/spotify-web-api-java/spotify-web-api-java/raw/develop/src/test/fixtures/requests/data/playlists/GetPlaylistsItemsRequest.json
+ls
+cd ..
+cd ..
+cd ..
+./gradlew cleanTest && ./gradlew test
+fpush
+nitrogen --restore
+killall xinit
+nitrogen --restore
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+fpush
+git checkout master
+git pull
+cd University/SoPra/RaveWave-client
+ls
+cd ..
+ls
+v export
+cd RaveWave-client
+ls
+git checkout master
+git pull
+v src/api/getDomain.ts
+npm run dev
+git checkout SheenaGitDure
+startx
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew build -xtest && ./gradlew bootrun
+git stash
+git checkout tastyTesting
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+fpush
+fpush
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+fpush
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+fpush
+fpush
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+git add .
+git commit -m "push it to the limit"
+git push
+fpush
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+fpush
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+cd University/SoPra/RaveWave-server
+git checkout master
+git pull
+ls
+cd src/test/java/ch/uzh/ifi/hase/soprafs22/controller
+ls
+v WebsocketControllerTest.java
+cd
+cd University/SoPra
+ls
+v export
+nitrogen --restore
+wget https://api.multiavatar.com/Valentin.png
+ls 
+zathura Valentin.png
+pic Valentin.png
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+ls
+git add .
+git commit -m "sock my web"
+git push
+git pull
+git add .
+git commit -m "sacrificied techno for german rap"
+git push
+git pull
+git pull
+source ./../export
+./gradlew cleanTest && ./gradlew test
+./gradlew cleanTest && ./gradlew test
+./gradlew build -xtest && ./gradlew bootrun
+source ./../export
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+./gradlew build -xtest && ./gradlew bootrun
+git switch -c hierkomschtnedrein
+git add .
+git commit -m "test"
+git push
+ git push --set-upstream origin hierkomschtnedrein
+fpush
+cd Downloads/firefox
+ls
+wget https://github.com/sopra-fs22-group-17/RaveWave-server/raw/master/RaveWaveLogoDurchsichtig.png
+ls
+rm RaveWaveLogoDurchsichtig.png RaveWaveLogo.png
+ls
+ls
+rm RaveWaveLogo-removebg-preview.png
+wget https://github.com/sopra-fs22-group-17/RaveWave-server/raw/master/RaveWaveLogoDurchsichtig.png
+cd 
+cd University/SoPra
+ls
+v export
+v export
+cd RaveWave-client
+git pull
+git stash
+git pull
+cd src/api/getDomain.ts
+v src/api/getDomain.ts
+npm run dev
+npm install
+npm run dev
+v src/api/getDomain.ts
+npm run dev
+cd University/SoPra
+ls
+rm -rf RaveWave-server
+git clone git@github.com:sopra-fs22-group-17/RaveWave-server.git
+cd RaveWave-server
+ls
+cd src/main/java/ch/uzh/ifi/hase/soprafs22/constant/
+v SongPool.java
+git add .
+git commit -m "sacrificied techno for german rap"
+git push
+cd ..
+cd ..
+cd ..
+cd 
+cd University/SoPra/RaveWave-server
+ls
+git pull
+ls
+./gradlew cleanTest && ./gradlew test
+source ./../export
+./gradlew cleanTest && ./gradlew test
+git pull
+sudo dnf update -y
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+nitrogen --restore
+zathura $TRANS/ai/ai_complete.pdf&
+evince $TRANS/ai/ai_complete.pdf&
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+evince $TRANS/ai/ai_complete.pdf&
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+evince $TRANS/ai/ai_complete.pdf&
+cd Nextcloud/notes/university/AI
+ls
+zathura ai_cheatsheet.pdf
+mv HPC_2022_ex12.pdf $TRANS
+zathura $TRANS/HPC_2022_ex12.pdf &
+evince $TRANS/ai/ai_complete.pdf&
+cd Downloads/firefox
+ls
+cd ..
+ls
+cd brave
+ls
+rm _vr_reporting-2022-06-01_07-16-00.pdf _vr_reporting-2022-06-01_07-17-51.pdf
+ls
+rm *
+zathura $TRANS/hpc_complete.pdf &
+sudo dnf update -y
+killall xinit
+zathura Downloads/firefox/DBS2022a_complete.pdf &
+zathura Downloads/firefox/ex11.pdf &
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+startx
+ls
+zathura Valentin.png
+pic Valentin.png
+rm Valentin.png
+ls
+zathura Downloads/firefox/ex11.pdf &
+cd Nextcloud/other
+ls
+mv AnmeldungInformatikpraktikumRVO16.pdf AnmeldungInformatikpraktikum_Dennys_Huber.pdf
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+npm install --global taskbook
+tb
+sudo dnf install okular
+o
+cd .source 
+ls
+git clone https://github.com/FedoraQt/adwaita-qt.git
+cd adwaita-qt
+ls
+mkdir build
+cmake
+make
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr
+cd ..
+ls
+rm -rf adwaita-qt
+c
+cd
+cd .local/bin
+ls
+v dopen.sh
+which espeak
+sudo dnf install espeach
+sudo dnf install espeak
+cd
+ls
+ls
+mv Final\ Examination\ Study\ Notes.pdf $TRANS
+sudo dnf install festival
+echo "test" | festival
+echo "This is an example. Arch is the best." | festival --tts
+festival -h
+festival -server&
+festival --server&
+fg
+bat
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+bta
+bat
+mpv ~/Downloads/torrents/Top.Gear.S32E01.1080p.HDTV.H264-DARKFLiX\[rarbg\]
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo systemctl bluetooth restart
+sudo systemctl service.bluetooth restart
+sudo systemctl restart service.bluetooth 
+sudo systemctl restart bluetooth 
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+cd .config
+ls
+v okularrc
+v okularpartrc
+ls
+sudo dnf update -y
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+mpv ~/Downloads/torrents/Obi-Wan.Kenobi.S01E04.1080p.WEB.h264-KOGi\[TGx\]
+killall xinit
+sudo dnf remove evince
+sudo dnf remove mupdf
+sudo dnf autoremove
+mpv ~/Downloads/torrents/Star.Trek.Strange.New.Worlds.S01E06.1080p.WEB.H264-CAKES\[rarbg\]
+cd Downloads/firefox
+ls
+chmod a+x VirtScreen.AppImage
+./VirtScreen.AppImage
+startk
+startx
+killall xinit
+killall xinit
+sudo bluetoothctl connect 60:AB:D2:8D:B0:B0
+dnf search gnome
+sudo dnf group list
+dnf group list
+startx
+startx
+mpv ~/Downloads/torrents/Jurassic\ World\ Dominion\ \(2022\)\ x264\ HQCAM\ \(Cleaned\ Audio\)\ AAC\ -\ QRips.mkv&
+sudo dnf group list
+ sudo dnf group install "GNOME Desktop Environment" 
+ls
+ls
+ sudo dnf group remove "GNOME Desktop Environment" 
+dmenu
+dmenu | ls
+cd /usr/share/xsessions
+ls
+v xinit-compat.desktop
+sv xinit-compat.desktop
+cd /usr/share/xsessions
+ls
+ls
+sudo touch dwm.desktop
+ls
+sudo nvim dwm.desktop
+cd /usr/share/xsessions
+ls
+v dwm.desktop
+sudo nvim dwm.desktop
+cd /usr/share/xsessions
+ls
+v dwm.desktop
+sudo nvim dwm.desktop
+cd /usr/share/xsessions
+ls
+v dwm.desktop
+sudo nvim dwm.desktop
+cd /usr/share/xsessions
+ls
+v dwm.desktop
+sudo nvim dwm.desktop
+v xinit-compat.desktop
+ls
+cd
+ls
+v .xinitrc
+ls
+man startx
+ls -a
+v .zprofile
+ls
+file .zprofile
+ls
+v .zprofile
+v .xsession
+ls
+ls
+ls -a
+cd /usr/share/xsessions
+ls
+v dwm.desktop
+sudo nvim dwm.desktop
+v xinit-compat.desktop
+ls
+cd
+ls
+v .xinitrc
+ls
+man startx
+ls -a
+v .zprofile
+ls
+file .zprofile
+ls
+v .zprofile
+v .xsession
+ls
+ls
+ls -a
+cd /usr/share/xsessions
+ls
+v dwm.desktop
+sudo nvim dwm.desktop
+v xinit-compat.desktop
+ls
+cd
+ls
+v .xinitrc
+ls
+man startx
+ls -a
+v .zprofile
+ls
+file .zprofile
+ls
+v .zprofile
+v .xsession
+ls
+ls
+ls -a
+v /usr/share/xsessions
+ls
+cd /usr/share/xsessions
+ls
+sudo nvim dwm.desktop
+ls
+cd
+v .xsession
+v .zprofile
+v .zprofile
+ls
+ls -a
+v .xsession-errors
+v .xsession-errors.old
+v .zprofile
+v .xsession
+v .zprofile
+ls
+ls -a
+v .xsession-errors
+v .xsession-errors.old
+v .zprofile
+v .xsession
+v .zprofile
+ls
+ls -a
+v .xsession-errors
+v .xsession-errors.old
+v .zprofile
+v .xsession
+ls
+v .xinitrc
+ls
+v .local/bin/startdwm.sh
+ls
+v .xsession
+ls
+v .xinitrc
+ls
+cd /usr/share/xsessions
+ls
+sudo nvim dwm.desktop
+ls
+cd
+ls
+rm .xsession
+ls
+ls
+v .xprofile
+v .zprofile
+cd /usr/share/xsessions
+ls
+sudo nvim dwm.desktop
+bc
+sudo dnf install gnome-calc
+sudo dnf search gnome-calc
+sudo dnf search gnome-calculator
+sudo dnf install gnome-calculator
+antigen update
+cd
+sudo dnf install gnome-shell-extension-pop-shell xprop
+dnf search gnome-screenshot
+sudo dnf install gnome-screenshot
+cd $TRANS
+ls
+cd Nextcloud/other/transfer/ai
+ls
+cd exercise
+ls
+pdfunite *.pdf ai_exercise_complete.pdy
+lss
+ls
+mv ai_exercise_complete.pdy ai_exercise_complete.pdf
+ls
+zathura ai_exercise_complete.pdf
+killall signal-desktop
+cd .source
+ls
+cd neovim
+git pull
+ls
+make
+sudo make
+sudo make install
+cd
+cd .config/nvim
+ls
+v init.lua
+cd lua/general
+ls
+v opt.lua
+v opt.lua
+v opt.lua
+sudo dnf install gnome-shell-extension-manage
+sudo dnf install gnome-shell-extension-manager
+sudo dnf search gnome-shell-extension-manager
+sudo dnf update -y
+cd Downloads/firefox
+ls
+unzip Archive.zip -d soften
+ls
+cd soften
+ls
+cd ..
+mv soften ~/Nextcloud/other/transfer
+sudo dnf update -y
+killall xinit
+killall gdm-x-session
+killall xinit
+killall gdm-x-session
+killall xinit
+killall gdm-x-session
+sudo dnf install awesome
+ls
+cd .config
+ls
+ls
+ls
+mkdir awesome
+cd awesome
+ls
+cp -r /etc/xdg/awesome/ .
+ls
+cd awesome
+ls
+mv rc.lua ..
+ls
+cd ..
+rmdir awesome
+ls
+v rc.lua
+v rc.lua
+killall xinit
+sudo dnf install awesome
+ls
+cd .config
+ls
+ls
+ls
+mkdir awesome
+cd awesome
+ls
+cp -r /etc/xdg/awesome/ .
+ls
+cd awesome
+ls
+mv rc.lua ..
+ls
+cd ..
+rmdir awesome
+ls
+v rc.lua
+v rc.lua
+killall xinit
+startx
+exit
+gdm
+sudo gmd
+sudo gdm
+sudo reboot
+set
+ls
+setxkbmap us altgr-intl
+ls
+xrandr
+arandr
+ls
+cd .config/awesome
+v rc.lua
+firefox
+exit
+exit
+exit
+exih
+exit
+ls
+cd .config/awesome
+v rc.lua
+setxkbmap us altgr-intl
+v rc.lua
+git clone --recurse-submodules --remote-submodules --depth 1 -j 2 https://github.com/lcpz/awesome-copycats.git
+mv -bv awesome-copycats/* ~/.config/awesome; rm -rf awesome-copycats
+ls
+cp rc.lua rc.lua.old
+cp rc.lua.template rc.lua
+v rc.lua
+cd
+v .xinitrc
+killall xinit
+killall gdm-x-session
+ls
+dnf search pulseaudio
+sudo dnf install pasystray
+PULSE_SERVER=remote_host pasystray
+PULSE_SERVER=remote_host pasystray
+sudo dnf remove pasytray
+sudo dnf remove pasystray
+git clone https://github.com/BlingCorp/bling.git ~/.config/awesome/bling
+ls
+v .config/awesome
+ls
+cd .config/awesome
+ls
+cp rc.lua.old rc.lua
+ls
+ls
+v rc.lua rc.lua.template
+ps
+top
+nextcloud&
+v rc.lua rc.lua.template -o
+v rc.lua rc.lua.template -O
+cd themes
+ls
+rm -rf blackburn/ copland dremora holo multicolor powerarrow powerarrow-dark steamburn vertex
+ls
+mv rainbow orca
+cd ..
+ls
+v rc.lua
+cd themes
+ls
+cd orca
+ls
+v theme.lua
+ls
+ls
+cd .config/nvim/lua/general
+cd ..
+cd plugins/
+v lsp.lua
+xev
+setxkbmap us altgr-intl
+ls
+cd .config/awesome
+ls
+cd themes/orca
+ls
+cp ~/.dotfiles/roles/nitrogen/files/pexels-harrison-candlin-2441454.jpg iceland.jpg
+ls
+v theme.lua
+ls
+pic iceland.jpg
+ls
+rm wall.png
+ls
+v theme.lua
+nitrogen --restore
+c
+ls
+mpv
+v theme.lua
+cd ..
+cd ..
+ls
+cd bling
+ls
+cd ..
+ls
+v rc.lua
+[[ -d ~/.config/awesome/plugins ]] || mkdir ~/.config/awesome/plugins\
+cd ~/.config/awesome/plugins\
+\
+git clone https://github.com/macunha1/awesomewm-media-player-widget \\
+    ~/.config/awesome/plugins/media-player
+ls
+cd ..
+ls
+cd plugins
+ls
+cd media-player
+ls -a
+rm -rf .git
+ls
+rm README.md screenshot.png UNLICENSE
+ls
+cd ..
+ls
+cd ..
+ls
+cd themes
+ls
+v orca/theme.lua
+cd ..
+ls
+mv plugins/media-player .
+ls
+rmdir plugins
+ls
+cd themes/orca
+v theme.lua
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf media-player 
+ls
+ps dunst
+top
+ps -u root
+ps -u root | grep dunst
+dunst &
+v rc.lua
+v rc.lua
+cd
+v .config/awesome/rc.lua
+ls
+cd .config/awesome
+ls
+v themes/orca/theme.lua
+cd
+cd .config/nvim/lua
+cd plugins
+ls
+v null-ls.lua
+v lsp.lua
+cd
+cd .config/awesome
+ls
+v rc.lua
+v rc.lua
+v themes/orca/theme.lua
+pavucontrol
+v rc.lua
+v themes/orca/theme.lua
+dnf search cbatticon
+sudo dnf install xfce-powermanager
+sudo dnf search xfce
+sudo dnf search xfce4-power-manager
+sudo dnf install xfce4-power-manager
+antigen update
+sudo dnf remove xfce4-power-manager
+pkill xfce4-power-man
+v themes/orca/theme.lua
+sudo dnf remove gdm gnome
+ls
+ls
+v themes/orca/theme.lua
+ls
+v lain/widget/cal.lua
+ls
+v themes/orca/theme.lua
+ls
+rm rc.lua.old rc.lua.template README.rst
+ls
+rm ISSUE_TEMPLATE.md
+ls
+cd lain
+ls -a
+rm -rf .git .github .gitmodules
+ls
+cd ..
+ls
+cd lain
+ls
+ls -a
+ls
+ls -a
+cd ..
+cd freedesktop
+ls
+ls -a
+rm -rf .git
+ls
+cd ..
+ls
+cd freedesktop
+ls
+ls -a
+cd ..
+cd bling
+ls
+ls -a
+rm -rf .git
+ls
+cd ..
+ls
+cd ..
+cd
+ls
+cd .dotfiles/roles
+ls
+cd neovim
+ls
+cd files
+ls
+rm -rf *
+ls
+cp -r ~/.config/nvim/*
+ls
+cp -r ~/.config/nvim/* .
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir awesome
+cd awesome
+ls
+mkdir files
+ls
+cd files/
+cp -r ~/.config/awesome/* .
+ls
+cd ..
+cd ..
+cd ..
+fpush
+ls
+startx
+sudo dnf install -y java-11-openjdk-devel
+wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
+ls
+rm android-studio-2020.3.1.26-linux.tar.gz
+ls
+cd Downloads/firefox
+ls
+tar -xvzf android-studio-*-linux.tar.gz
+ls
+mv android-studio ~/.source
+cd ..
+ls
+cd
+cd .source
+ls
+sudo ./android-studio/bin/studio.sh
+notify-send hello
+pkill dunst
+notify-send hello
+sudo dnf update -y
+git clone https://github.com/neovim/neovim.git
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo\
+sudo make install
+make CMAKE_BUILD_TYPE=RelWithDebInfo\
+sudo make install
+cd .config/awesome/
+ls
+v rc.lua
+cd bling
+ls
+cd ..
+ls
+cd themes
+ls
+cd orca
+ls
+v theme.lua
+cd
+cd .config
+cd
+cd .source
+ls
+cd neovim
+git pull
+make
+cd
+cd .config/neofetch
+cd ..
+cd awesome
+ls
+v themes/orca/theme.lua
+ls
+v rc.lua
+ls
+cp themes/orca/iran.jpeg ~/.dotfiles/roles/nitrogen/files
+cd
+cd .source/nvidia-drivers
+cd ..
+ls
+cd neovim
+ls
+make
+cmake
+cmake -r
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+rm cmake.deps/CMakeLists.txt
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd ..
+ls
+rm -rf neovim
+killall steam
+xrandr --output DP-1-1.3 --scale 2x2
+xrandr --output DP-1-1.3 --scale 1x1
+sudo dnf install steam -y
+killall steam
+steam
+steam
+steam
+cd .config/awesome
+ls
+v rc.lua
+v rc.lua
+steam
+v rc.lua
+cd
+ls
+rm -rf neovim
+ls
+ls
+cd .steam
+ls
+cd ..
+ls
+cd .steampath
+cd .steam/steam
+ls
+cd ~/.local/share/Steam/steamapps/common/Stellaris
+ls
+cd common
+ls
+cd ..
+ls
+cd sound
+ls
+cd advisor_voice_types
+ls
+v 00_advisor_voice_types.txt
+ls
+cd ..
+ls
+cd vo
+ls
+cd ethics
+ls
+cd hivemind
+ls
+mpv advisor_notification_alien_empire_communication_01.wav
+mpv advisor_notification_alien_empire_communication_01.wav
+cd ..
+ls
+cd authoritarian
+ls
+mpv advisor_generic_phrase_01.wav
+mpv advisor_notification_incoming_transmission_01.wav
+mpv advisor_notification_incoming_transmission_01.wav
+mkdir ~/Music/notifications/stellaris
+mkdir -p ~/Music/notifications/stellaris
+cp advisor_notification_incoming_transmission_01.wav ~/Music/notifications/stellaris/authoritarian_incoming_transmission.wav
+cd ..
+ls
+cd egalitarian
+ls
+mpv
+mpv advisor_notification_incoming_transmission_01.wav
+cd ..
+ls
+cd machine_empire
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+cd ..
+ls
+cd materialist
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+mpv advisor_notification_incoming_transmission_02.wav
+mpv advisor_notification_incoming_transmission_01.wav
+cp advisor_notification_incoming_transmission_01.wav ~/Music/notifications/stellaris/materialist_incoming_transmission.wav
+cd ..
+ls
+cd militarist
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+mpv advisor_notification_incoming_transmission_02.wav
+cd ..
+ls
+cd pacifist
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+mpv advisor_notification_incoming_transmission_01.wav
+cd ..
+ls
+cd spiritualist
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+cd ..
+ls
+cd xenophile
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+cd ..
+ls
+cd xenophobe
+mpv advisor_notification_incoming_transmission_01.wav
+cd ..
+ls
+cd ..
+ls
+cd notifications
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+cp advisor_notification_incoming_transmission_01.wav ~/Music/notifications/stellaris/default_incoming_transmission.wav
+cd ..
+ls
+cd bajen
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+cd ..
+ls
+cd respons
+ls
+mpv advisor_clicking_respons_01.wav
+mpv advisor_clicking_respons_02
+mpv advisor_clicking_respons_03.wav
+mpv advisor_clicking_respons_10.wav
+mpv *
+ls
+cd ..
+ls
+cd phenotypes
+ls
+mpv arthopoid_generic_greeting_01.wav
+cd ..
+ls
+cd event
+ls
+mpv *
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd Stellaris
+ls
+cd dlc
+ls
+cd dlc020_megacorp
+ls
+cd ..
+ls
+cd dlc023_federations
+ls
+unzip dlc023.zip
+ls
+cd music
+ls
+cd ..
+ls
+rm -rf music
+ls
+cd ..
+ls
+cd ..
+ls
+cd dlc_metadata
+ls
+cd dlc_recommendations
+ls
+cd ..
+cd ..
+ls
+cd sound
+ls
+cd megacorp
+ls
+mpv *
+ls
+cd ..
+ls
+cd federations
+ls
+mpv sfx_notification_denounced.wav
+cd ..
+ls
+cd vo
+ls
+cd notifications
+ls
+cd ..
+ls
+cd generic
+ls
+cd ..
+ls
+cd ..
+ls
+cd utopia
+ls
+cd ..
+ls
+cd advisor_voice_types
+ls
+v 00_advisor_voice_types.txt
+cd ..
+ls
+v sound.asset
+cd megacorp
+ls
+v megacorp.asset
+cd ..
+ls
+cd vo
+ls
+cd ethics
+ls
+cd ..
+cd ..
+cd ..
+ls
+cd common
+ls
+cd ..
+ls
+cd dlc
+ls
+cd dlc020_megacorp
+ls
+unzip dlc020.zip
+ls
+cd sound/vo
+ls
+cd slick_vir
+mpv advisor_notification_incoming_transmission_01.wav
+mpv advisor_notification_incoming_transmission_02.wav
+cd ..
+ls
+cd evil_corp/
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+mpv advisor_notification_incoming_transmission_02.wav
+mpv advisor_notification_incoming_transmission_03.wav
+mpv advisor_notification_incoming_transmission_04.wav
+cd ..
+ls
+cd the_worker
+ls
+mpv advisor_notification_incoming_transmission_01.wav
+ls
+mpv advisor_notification_terraform_station_lost_01.wav
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf sound music
+ls
+pic thumbnail.png
+ls
+cd
+cd Music/notifications/stellaris
+ls
+mpv *
+mpv *
+mpv default_incoming_transmission.wav
+mpv authoritarian_incoming_transmission.wav
+sudo dnf upgrade --refresh -y
+curl -1sLf \\
+'https://dl.cloudsmith.io/public/balena/etcher/setup.rpm.sh' \\
+| sudo -E bash
+sudo dnf install curl -y
+sudo dnf install balena-etcher-electron -y
+killall xinit
+startx
+balena-etcher-electron
+which balena-etcher-electron
+sudo dnf upgrade --refresh -y
+reboot
+balena-etcher-electron
+balena-etcher-electron
+zsh
+balena-etcher-electron
+sudo dnf remove balena-etcher-electron -y
+sudo rm /etc/yum.repos.d/balena-etcher.repo
+cd Dowrm /etc/yum.repos.d/balena-etcher.repo\
+rm /etc/yum.repos.d/balena-etcher-source.repo
+rm /etc/yum.repos.d/balena-etcher.repo\
+rm /etc/yum.repos.d/balena-etcher-source.repo
+cd Downloads/firefox
+ls
+unzip balena-etcher-electron-1.7.9-linux-x64.zip
+ls
+./balenaEtcher-1.7.9-x64.AppImage
+sudo ./balenaEtcher-1.7.9-x64.AppImage
+ls
+ssh dennys@ubuntu-home
+ssh dennys@192.168.1.41
+balena-etcher-electron
+sudo dnf remove balena-etcher-electron -y
+sudo rm /etc/yum.repos.d/balena-etcher.repo
+cd Dowrm /etc/yum.repos.d/balena-etcher.repo\
+rm /etc/yum.repos.d/balena-etcher-source.repo
+rm /etc/yum.repos.d/balena-etcher.repo\
+rm /etc/yum.repos.d/balena-etcher-source.repo
+cd Downloads/firefox
+ls
+unzip balena-etcher-electron-1.7.9-linux-x64.zip
+ls
+./balenaEtcher-1.7.9-x64.AppImage
+sudo ./balenaEtcher-1.7.9-x64.AppImage
+ping 192.168.1.41
+ping 192.168.1.41:9443
+ssh dennys@192.168.1.41
+ssh dennys@192.168.1.41
+ssh dennys@192.168.1.41
+ssh dennys@192.168.1.41
+ssh homeserver
+cd .ssh
+ls
+v config
+ls
+ssh-keygen -t rsa
+ls
+cat config
+ssh-copy-id -i ubuntu-home.pub homeserver
+ssh homeserver
+killall xinit
+ssh pi@192.168.1.21
+yx+vg
++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
+KITTY_DATA_END
+exit
+ssh pi@192.168.1.21
+startx
+cd .config/awesome
+ls
+v rc.lua
+v themes/orca/theme.lua
+cd themes/orca
+ls
+v theme.lua
+v theme.lua
+v theme.lua
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+ls
+cd 
+cd .config/nvim
+ls
+v init.lua
+cd lua/plugins
+ls
+mv indentline.lua auto-session.lua ../
+ls
+v undotree.lua
+ls
+mv lualine.lua ..
+ls
+v 
+ls
+cd ..
+ls
+mv *.lua plugins
+cd ..
+ls
+rm -rf plugin
+ls
+v init.lua
+v init.lua
+cd lua/plugins
+ls
+v lsp.lua
+ls
+cd
+cd Projects
+ls
+mkdir rust
+cd rust
+ls
+cd
+v .xinitrc
+v .xprofile
+ls
+v .xinitrc
+v .xprofile
+ls
+v .zshrc
+ls
+cd Projects/rust
+ls
+mkdir playground
+cd playground
+cd ..
+rm -rf playground
+ls
+cargo new learn
+ls
+cd learn
+ls
+v Cargo.toml
+cd src
+ls
+v main.rs
+ls
+ls
+cd ..
+ls
+ls -a
+v .gitignore
+ls
+cd target
+ls
+cd ..
+ls
+./target/debug/learn
+ls
+v src/main.rs
+nmtui
+killall xinit
+cd Projects/rust
+ls
+cd learn
+ls
+v src/main.rs
+bat
+v src/main.rs
+v src/main.rs
+startx
+cd .config/awesome
+ls
+v rc.lua
+ls
+cd ..
+cp -r awesome/* ~/.dotfiles/roles/awesome/files
+cp -r nvim ~/.dotfiles/roles/neovim/files/
+cp -r nvim/* ~/.dotfiles/roles/neovim/files/
+cd 
+cd .dotfiles/roles/neovim/files
+ls
+rm -rf nvim
+ls
+cd 
+cd .dotfiles
+ls
+fpush
+cd
+cd .config/awesome
+ls
+v rc.lua
+v themes/orca/theme.lua
+sudo dnf update -y
+cd Projects/rust
+ls
+touch llist.rs
+ls
+ls -a
+v llist.rs
+mv llist.rs learn
+cd learn
+v llist.rs
+ls
+mv llist.rs src/main.rs
+cd src/main.rs
+cd src
+ls
+v main.rs
+v .config/awesome/rc.lua
+cd .config/awesome
+v rc.lua
+cd
+cd .config
+ls
+cp -r awesome/* ~/.dotfiles/roles/awesome/files
+cd
+cd .dotfiles
+ls
+cd roles
+ls
+cd suckless
+ls
+cd tasks
+ls
+v main.yml
+cd ..
+ls
+cd ..
+ls
+cd dev
+ls
+cd tasks
+ls
+v main.yml
+ls
+cd ..
+ls
+cd ..
+ls
+cd dev
+ls
+cd tasks
+v main.yml
+cd
+cd .config
+ls
+v okularrc
+ls
+v okularpartrc
+v okularrc
+v user-dirs.dirs
+v user-dirs.locale
+v mimeapps.list
+ls
+cd 
+cd .config/awesome
+ls
+cd
+cd .dotfiles/roles/awesome
+ls
+mkdir tasks
+cd tasks
+v main.yml
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+v main.yml
+cd group_vars
+ls
+v all
+cd ..
+cd roles/fonts
+ls
+v tasks/main.yml
+dnf list installed | less
+dnf history userinstalled
+cd
+cd Downloads/firefox
+cd 
+cd .dotfiles/roles/awesome
+cd ..
+ls
+dnf history userinstalled > installed.txt
+ls
+v installed.txt
+ls
+rm -rf languages
+v system
+ls
+rm -rf dev
+ls
+v installed.txt
+mkdir -p dev/tasks
+cd dev/tasks
+dnf list installed
+dnf list installed | less

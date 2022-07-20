@@ -18,28 +18,28 @@
     path: "{{ ansible_user_dir }}/.config/suckless"
     state: directory
 
-- name: Copy source code dwm
-  ansible.builtin.copy:
-    dest: "{{ ansible_user_dir }}/.config/suckless/dwm-6.3"
-    src: "dwm-6.3/"
-
-- name: Make and make install dwm
-  make:
-    chdir: "{{ ansible_user_dir }}/.config/suckless/dwm-6.3"
-    target: install
-  become: yes
-
-- name: Create local bin folder
-  ansible.builtin.file:
-    mode: "0755"
-    path: "{{ ansible_user_dir }}/.local/bin"
-    state: directory
-
-- name: Copy dwm startup script
-  ansible.builtin.copy:
-    mode: "0755"
-    dest: "{{ ansible_user_dir }}/.local/bin/startdwm.sh"
-    src: "startdwm.sh"
+# - name: Copy source code dwm
+#   ansible.builtin.copy:
+#     dest: "{{ ansible_user_dir }}/.config/suckless/dwm-6.3"
+#     src: "dwm-6.3/"
+#
+# - name: Make and make install dwm
+#   make:
+#     chdir: "{{ ansible_user_dir }}/.config/suckless/dwm-6.3"
+#     target: install
+#   become: yes
+#
+# - name: Create local bin folder
+#   ansible.builtin.file:
+#     mode: "0755"
+#     path: "{{ ansible_user_dir }}/.local/bin"
+#     state: directory
+#
+# - name: Copy dwm startup script
+#   ansible.builtin.copy:
+#     mode: "0755"
+#     dest: "{{ ansible_user_dir }}/.local/bin/startdwm.sh"
+#     src: "startdwm.sh"
 
 - name: Copy source code dmenu
   ansible.builtin.copy:

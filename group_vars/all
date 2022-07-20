@@ -2,15 +2,15 @@ default_roles:
   - X
   - zsh
   - git
+  - awesome
+  - system
   - suckless
+  - dev
   - firefox
   - scripts
   - neovim
   - kitty
-  - dunst
   - fonts
-  - zathura
-  - nitrogen
   - themes
   - icons
   - vifm

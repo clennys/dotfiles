@@ -20,14 +20,15 @@ else
 fi
 [ -r ~/.xprofile ] && . ~/.xprofile
 
-while true; do
-   xsetroot -name "$( date +" %Y-%m-%d %a %H:%M " )"
-   sleep 1m    # Update time every minute
-done &
+# while true; do
+#    xsetroot -name "$( date +" %Y-%m-%d %a %H:%M " )"
+#    sleep 1m    # Update time every minute
+# done &
 
 
 xmodmap ~/.Xmodmap
 
 # launch the session, commands below this line will be ignored
 # exec dwm
-exec ~/.local/bin/startdwm.sh
+# exec ~/.local/bin/startdwm.sh
+exec awesome

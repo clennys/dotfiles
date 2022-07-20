@@ -43,8 +43,6 @@ end
 local chosen_theme = "orca"
 beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
 
-local bling = require("bling")
-
 -- This is used later as the default terminal and editor to run.
 Terminal = "kitty"
 Editor = os.getenv("EDITOR") or "vim"
@@ -69,7 +67,7 @@ awful.layout.layouts = {
 	-- awful.layout.suit.spiral,
 	-- awful.layout.suit.spiral.dwindle,
 	awful.layout.suit.max,
-	-- awful.layout.suit.max.fullscreen,
+	awful.layout.suit.max.fullscreen,
 	-- awful.layout.suit.magnifier,
 	-- awful.layout.suit.corner.nw,
 	-- awful.layout.suit.corner.ne,
@@ -79,34 +77,6 @@ awful.layout.layouts = {
 }
 -- }}}
 
--- {{{ Menu
--- Create a launcher widget and a main menu
--- myawesomemenu = {
--- 	{ "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
--- 	{ "manual", Terminal .. " -e man awesome" },
--- 	{ "edit config", Editor_cmd .. " " .. awesome.conffile },
--- 	{ "restart", awesome.restart },
--- 	{ "quit", function() awesome.quit() end },
--- }
---
--- mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
--- 	{ "open terminal", Terminal }
--- }
--- })
---
--- mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
--- 	menu = mymainmenu })
---
--- -- Menubar configuration
--- menubar.utils.terminal = Terminal -- Set the terminal for applications that require it
--- -- }}}
---
--- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
-
--- {{{ Wibar
--- Create a textclock widget
-mytextclock = wibox.widget.textclock()
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -332,11 +302,10 @@ globalkeys = gears.table.join(
 
 clientkeys = gears.table.join(
 	awful.key({ modkey, }, "f",
-		function(c)
-			c.fullscreen = not c.fullscreen
-			c:raise()
+		function()
+			awful.layout.set(awful.layout.suit.max.fullscreen)
 		end,
-		{ description = "toggle fullscreen", group = "client" }),
+		{ description = "toggle max layout", group = "layout" }),
 	awful.key({ modkey, "Shift" }, "c", function(c) c:kill() end,
 		{ description = "close", group = "client" }),
 	awful.key({ modkey, "Control" }, "space", awful.client.floating.toggle,
@@ -345,14 +314,13 @@ clientkeys = gears.table.join(
 		{ description = "move to master", group = "client" }),
 	awful.key({ modkey, }, "o", function(c) c:move_to_screen() end,
 		{ description = "move to screen", group = "client" }),
-	awful.key({ modkey, }, "t", function(c) c.ontop = not c.ontop end,
-		{ description = "toggle keep on top", group = "client" }),
+	awful.key({ modkey, }, "t", function() awful.layout.set(awful.layout.suit.tile) end,
+		{ description = "select tiling layout", group = "layout" }),
 	awful.key({ modkey, }, "m",
-		function(c)
-			c.maximized = not c.maximized
-			c:raise()
+		function()
+			awful.layout.set(awful.layout.suit.max)
 		end,
-		{ description = "(un)maximize", group = "client" }),
+		{ description = "monocle layout", group = "layout" }),
 	awful.key({ modkey, "Control" }, "m",
 		function(c)
 			c.maximized_vertical = not c.maximized_vertical
