@@ -8,6 +8,7 @@
       - libXinerama-devel
       - dbus
       - dbus-x11
+      - make
       - light
       - playerctl
     state: present

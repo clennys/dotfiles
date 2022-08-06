@@ -14,11 +14,11 @@ fi
 
 # Install RPM Fusion
 if ! [[ -f "/etc/yum.repos.d/rpmfusion-free.repo" ]]; then
-	sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+	sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
 fi
 
 if ! [[ -f "/etc/yum.repos.d/rpmfusion-nonfree.repo" ]]; then
-	sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+	sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 fi
 
 
@@ -41,7 +41,7 @@ fi
 
 # Github ssh keys
 if ! [[ -f "$SSH_DIR/id_ed25519" ]]; then
-  ssh-keygen -t ed25519 -f "$SSH/id_ed25519" -N "" -C "$EMAIL"
+  ssh-keygen -t ed25519 -f "$SSH_DIR/id_ed25519" -N "" -C "$EMAIL"
 fi
 
 # Check for ansible requirements

@@ -1,4 +1,9 @@
 ---
+- name: install the 'Development tools' package group
+  dnf:
+    name: '@Development tools'
+    state: present
+
 - name: Install packages with default config
   ansible.builtin.package:
     name:
