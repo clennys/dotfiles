@@ -114,13 +114,24 @@ return require("packer").startup({
 		})
 
 		-- -- Indent Lines
-		-- use({
-		-- 	"lukas-reineke/indent-blankline.nvim",
-		-- 	event = "BufRead",
-		-- 	config = function()
-		-- 		require("plugins.indentline")
-		-- 	end,
-		-- })
+		use({
+			"lukas-reineke/indent-blankline.nvim",
+			event = "BufRead",
+			config = function()
+				require("plugins.indentline")
+			end,
+		})
+
+		require("packer").startup(
+			function()
+				use {
+					'lukas-reineke/headlines.nvim',
+					config = function()
+						require('headlines').setup()
+					end,
+				}
+			end
+		)
 
 		-- Pairs
 		use({
