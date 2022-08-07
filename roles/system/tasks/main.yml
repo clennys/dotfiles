@@ -49,6 +49,8 @@
       - xev
       - xmodmap
       - rsync
+      - timeshift
+      - akmod-nvidia
     state: latest
   become: yes
 
