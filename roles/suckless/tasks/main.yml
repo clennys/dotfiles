@@ -6,6 +6,8 @@
       - libX11-devel
       - libXft-devel
       - libXinerama-devel
+      - libXrandr-devel
+      - imlib2-devel
       - dbus
       - dbus-x11
       - make

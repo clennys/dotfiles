@@ -3,6 +3,8 @@
   ansible.builtin.package:
     name:
       - zsh
+      - zoxide
+      - fzf
     state: latest
   become: yes
 

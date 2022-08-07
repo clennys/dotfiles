@@ -1,0 +1,14 @@
+- name: Add repository
+  ansible.builtin.yum_repository:
+    name: RPM Fusion free
+    description: RPM Fusion repository with free software
+    baseurl: https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+  become: yes
+
+- name: Add repository
+  ansible.builtin.yum_repository:
+    name: RPM Fusion free
+    description: RPM Fusion repository with non-free software 
+    baseurl: https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  become: yes
+

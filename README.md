@@ -20,15 +20,12 @@ chmod 755 $HOME/.dotfiles/bin/dotfiles
 bash $HOME/.dotfiles/bin/dotfiles
 ```
 
-## TODO
-- [ ] Essential dev tools
-- [ ] Essential tools for system
-- [ ] Programming Languages
-- [ ] Language Servers
+```bash
+# Run single role
+ansible localhost -m include_role -a name=<ROLE_NAME> --ask-become-pass
+
+```
+
 - [ ] Spotify
 - [ ] RPM fusion
-- [ ] Create github ssh key
-- [ ] Add user to appropriate usergroups
-- [ ] Add conditonals to roles
-- [ ] Add autorandr role
 - [ ] Add Pip install (ueberzug, autorandr)

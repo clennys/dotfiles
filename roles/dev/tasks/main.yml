@@ -27,3 +27,8 @@
   tags:
     - rust
 
+- name: install the 'C Development Tools and Libraries' package group
+  ansible.builtin.package:
+    name: '@C Development Tools and Libraries'
+    state: present
+  become: yes

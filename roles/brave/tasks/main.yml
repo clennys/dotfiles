@@ -1,0 +1,15 @@
+---
+- name: Add repository
+  ansible.builtin.yum_repository:
+    name: brave-browser
+    description: brave-browser repo
+    baseurl: https://brave-browser-rpm-release.s3.brave.com/x86_64/
+  become: yes
+
+- name: Install
+  ansible.builtin.package:
+    name:
+      - brave-browser
+    state: latest
+  become: yes
+     

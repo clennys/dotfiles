@@ -1,13 +1,8 @@
 ---
-- name: install the 'Development tools' package group
-  ansible.builtin.package:
-    name: '@Development tools'
-    state: present
-  become: yes
-
 - name: Install packages with default config
   ansible.builtin.package:
     name:
+      - dnf-plugins-core
       - NetworkManager
       - NetworkManager-bluetooth
       - NetworkManager-wifi
@@ -20,6 +15,8 @@
       - pipewire-alsa
       - pipewire-pulseaudio
       - pipewire-utils
+      - wireplumber
+      - volumeicon
       - exa
       - tree
       - flameshot
@@ -51,6 +48,7 @@
       - xbacklight
       - xev
       - xmodmap
+      - rsync
     state: latest
   become: yes
 

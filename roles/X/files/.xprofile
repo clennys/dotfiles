@@ -40,6 +40,7 @@ clipmenud&
 xset dpms 600 900 1200
 xset r rate 350 60
 light -S 5
+volumeicon&
 
 low_battery.sh&
 blueman-applet&
