@@ -6,6 +6,11 @@
     baseurl: https://brave-browser-rpm-release.s3.brave.com/x86_64/
   become: yes
 
+- name: Import a key from a url
+  ansible.builtin.rpm_key:
+    state: present
+    key: https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+
 - name: Install
   ansible.builtin.package:
     name:
