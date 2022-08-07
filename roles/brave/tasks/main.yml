@@ -10,6 +10,7 @@
   ansible.builtin.rpm_key:
     state: present
     key: https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+  become: yes
 
 - name: Install
   ansible.builtin.package:
