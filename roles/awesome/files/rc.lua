@@ -419,7 +419,8 @@ awful.rules.rules = {
 			keys = clientkeys,
 			buttons = clientbuttons,
 			screen = awful.screen.preferred,
-			placement = awful.placement.no_overlap + awful.placement.no_offscreen + awful.placement.centered
+			placement = awful.placement.no_overlap + awful.placement.no_offscreen + awful.placement.centered,
+			round_corners = true
 		}
 	},
 
@@ -495,6 +496,10 @@ client.connect_signal("property::position", function(c)
 		end
 	end
 end)
+
+for _, preset in pairs(naughty.config.presets) do
+    preset.position = "top_middle"
+end
 
 
 
