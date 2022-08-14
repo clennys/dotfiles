@@ -1,12 +1,37 @@
 ---
-- name: Install the free rpm-fusion repo
-  ansible.builtin.dnf:
-    name: 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ fedora_version }}.noarch.rpm'
-    state: present
-  become: yes
+- name: install free and nonfree
+  block:
+    - name: configure free
+      block:
+        - name: install free gpg key
+          ansible.builtin.rpm_key:
+            key: "https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020"
+            state: present
+          become: yes
 
-- name: Install the non-free rpm-fusion repo
-  ansible.builtin.dnf:
-    name: 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ fedora_version }}.noarch.rpm'
-    state: present
-  become: yes
+        - name: install free repositories
+          ansible.builtin.yum:
+            name: 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ fedora_version }}.noarch.rpm'
+            state: present
+            validate_certs: no
+          notify:
+            - yum update cache
+          become: yes
+
+    - name: configure non-free
+      block:
+        - name: install nonfree gpg key
+          ansible.builtin.rpm_key:
+            key: "https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020"
+            state: present
+          become: yes
+
+        - name: install nonfree repositories
+          ansible.builtin.yum:
+            name: 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ fedora_version }}.noarch.rpm'
+            state: present
+            validate_certs: no
+          notify:
+            - yum update cache
+          become: yes
+
