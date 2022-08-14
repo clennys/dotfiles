@@ -1,14 +1,11 @@
-- name: Add repository
-  ansible.builtin.yum_repository:
-    name: rpmfusion-free
-    description: RPM Fusion repository with free software
-    baseurl: https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+- name: Install the free rpm-fusion repo
+  ansible.builtin.dnf:
+    name: 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm'
+    state: present
   become: yes
 
-- name: Add repository
-  ansible.builtin.yum_repository:
-    name: rpmfusion-nonfree
-    description: RPM Fusion repository with non-free software 
-    baseurl: https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+- name: Install the non-free rpm-fusion repo
+  ansible.builtin.dnf:
+    name: 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
+    state: present
   become: yes
-

@@ -32,6 +32,7 @@
       - breeze-cursor-theme
       - deluge
       - fd-find
+      - polkit-gnome
       - gnome-keyring
       - gnome-keyring-pam
       - light

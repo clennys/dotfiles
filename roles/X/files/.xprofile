@@ -20,6 +20,7 @@ export GOPATH=$HOME/go
 export SSH_AUTH_SOCK
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc36.x86_64
 
+/usr/libexec/polkit-gnome-authentication-agent-1 &
 export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 gnome-keyring-daemon --daemonize --login
 if  ! echo $(xrandr | grep "^DP-1") | grep " connected"
