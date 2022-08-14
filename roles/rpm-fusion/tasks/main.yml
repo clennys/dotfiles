@@ -14,8 +14,6 @@
             name: 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ fedora_version }}.noarch.rpm'
             state: present
             validate_certs: no
-          notify:
-            - yum update cache
           become: yes
 
     - name: configure non-free
@@ -31,7 +29,5 @@
             name: 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ fedora_version }}.noarch.rpm'
             state: present
             validate_certs: no
-          notify:
-            - yum update cache
           become: yes
 
