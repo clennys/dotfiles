@@ -1,11 +1,12 @@
+---
 - name: Install the free rpm-fusion repo
   ansible.builtin.dnf:
-    name: 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm'
+    name: 'https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ fedora_version }}.noarch.rpm'
     state: present
   become: yes
 
 - name: Install the non-free rpm-fusion repo
   ansible.builtin.dnf:
-    name: 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
+    name: 'https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ fedora_version }}.noarch.rpm'
     state: present
   become: yes

@@ -18,3 +18,5 @@ default_roles:
   - vifm
   - gtk
   - qt
+
+fedora_version: 36
