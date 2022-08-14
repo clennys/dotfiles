@@ -34,6 +34,18 @@ if ! [[ -f "$SSH_DIR/id_ed25519" ]]; then
   ssh-keygen -t ed25519 -f "$SSH_DIR/id_ed25519" -N "" -C "$EMAIL"
 fi
 
+# Firmware
+if ! [ -x "$(command -v fwupdmgr)" ]; then
+	sudo dnf install fwupd
+fi
+
+
+if ! [[ "systemctl is-active --quiet service" ]]; then
+	sudo systemctl start fwupd
+	sudo fwupdmgr refresh
+	sudo fwupdmgr update
+fi
+
 # Check for ansible requirements
 if [[ -f "$DOTFILES_DIR/requirements.yml" ]]; then
   cd "$DOTFILES_DIR"
