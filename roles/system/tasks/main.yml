@@ -52,6 +52,14 @@
       - rsync
       - timeshift
       - akmod-nvidia
+      - qemu-kvm
+      - libvirt
+      - virt-install
+      - bridge-utils
+      - virt-manager
+      - virt-top
+      - libguestfs-tools
+      - guestfs-tools
     state: latest
   become: yes
 
