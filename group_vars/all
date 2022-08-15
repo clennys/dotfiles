@@ -20,3 +20,4 @@ default_roles:
   - qt
 
 fedora_version: 36
+firmware_wifi: iwl7260-firmware

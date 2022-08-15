@@ -11,6 +11,7 @@
       - alsa-utils
       - bluez
       - dbus
+      - alsa-sof-firmware
       - pipewire
       - pipewire-alsa
       - pipewire-pulseaudio
@@ -60,6 +61,7 @@
       - virt-top
       - libguestfs-tools
       - guestfs-tools
+      - {{ firmware_wifi }}
     state: latest
   become: yes
 
