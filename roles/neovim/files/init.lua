@@ -76,7 +76,7 @@ return require("packer").startup({
 
 		-- Colorscheme
 		use({
-			"~/Projects/lua/neovim/orca.nvim",
+			"~/Projects/neovim/orca.nvim",
 			config = function()
 				require("orca")
 			end,
@@ -121,17 +121,6 @@ return require("packer").startup({
 				require("plugins.indentline")
 			end,
 		})
-
-		require("packer").startup(
-			function()
-				use {
-					'lukas-reineke/headlines.nvim',
-					config = function()
-						require('headlines').setup()
-					end,
-				}
-			end
-		)
 
 		-- Pairs
 		use({
@@ -198,12 +187,14 @@ return require("packer").startup({
 				require("plugins.null-ls")
 			end,
 		})
-		-- use({
-		-- 	"j-hui/fidget.nvim",
-		-- 	config = function()
-		-- 		require("fidget").setup({})
-		-- 	end,
-		-- })
+
+		use {
+			'lukas-reineke/headlines.nvim',
+			config = function()
+				require('plugins.headlines')
+			end,
+		}
+
 		-- use({
 		-- 	"nvim-lualine/lualine.nvim",
 		-- 	requires = { "kyazdani42/nvim-web-devicons", opt = true },

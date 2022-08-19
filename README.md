@@ -27,5 +27,4 @@ ansible localhost -m include_role -a name=<ROLE_NAME> --ask-become-pass
 ```
 
 - [ ] Spotify
-- [ ] RPM fusion
 - [ ] Add Pip install (ueberzug, autorandr)
