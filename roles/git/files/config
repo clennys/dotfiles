@@ -1,6 +1,6 @@
 [user]
 	email = dennys.huber@pm.me
-	name = Dennys
+	name = Dennys Huber
 [core]
 	excludesFile = ~/.config/git/ignore
 [credential]
