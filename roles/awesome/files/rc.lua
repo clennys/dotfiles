@@ -42,6 +42,7 @@ end
 -- Themes define colours, icons, font and wallpapers.
 local chosen_theme = "orca"
 beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 Terminal = "kitty"
@@ -296,8 +297,20 @@ globalkeys = gears.table.join(
 	awful.key({}, "XF86AudioStop",
 		function()
 			awful.util.spawn("playerctl stop", false)
-		end, { description = "stop Track", group = "audio" })
+		end, { description = "stop Track", group = "audio" }),
 
+	awful.key({ modkey }, "bracketleft",
+		function()
+			awful.util.spawn("playerctl -p spotify previous", false)
+		end, { description = "spotify previous song", group = "audio" }),
+	awful.key({ modkey }, "bracketright",
+		function()
+			awful.util.spawn("playerctl -p spotify next", false)
+		end, { description = "spotify next song", group = "audio" }),
+	awful.key({ modkey }, "grave",
+		function()
+			awful.util.spawn("playerctl -p spotify play-pause", false)
+		end, { description = "play-pause track", group = "audio" })
 )
 
 clientkeys = gears.table.join(
@@ -420,7 +433,6 @@ awful.rules.rules = {
 			buttons = clientbuttons,
 			screen = awful.screen.preferred,
 			placement = awful.placement.no_overlap + awful.placement.no_offscreen + awful.placement.centered,
-			round_corners = true
 		}
 	},
 
@@ -442,7 +454,8 @@ awful.rules.rules = {
 			"Pavucontrol",
 			"Wpa_gui",
 			"veromix",
-			"xtightvncviewer" },
+			"xtightvncviewer"
+		},
 
 		-- Note that the name property shown in xprop might be set slightly after creation of the client
 		-- and the name shown there might not match defined rules here.
@@ -481,7 +494,6 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
-
 client.connect_signal("property::position", function(c)
 	if c.class == 'Steam' then
 		local g = c.screen.geometry
@@ -498,9 +510,8 @@ client.connect_signal("property::position", function(c)
 end)
 
 for _, preset in pairs(naughty.config.presets) do
-    preset.position = "top_middle"
+	preset.position = "top_middle"
 end
-
 
 
 -- }}}

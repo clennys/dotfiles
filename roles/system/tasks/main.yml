@@ -47,6 +47,7 @@
       - terminus-fonts
       - terminus-fonts-console
       - tlp
+      - tlp-rdw
       - xbacklight
       - xev
       - xmodmap

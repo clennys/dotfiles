@@ -3,6 +3,7 @@
     name:
       - texlive-scheme-basic
       - latexmk
+      - npm
     state: latest
   become: yes
 

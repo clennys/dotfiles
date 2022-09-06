@@ -36,3 +36,4 @@ o.cursorline = true
 -- o.conceallevel = 2
 o.undofile = true
 o.swapfile = false
+o.spelllang = "de"
