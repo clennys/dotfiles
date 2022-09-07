@@ -5,6 +5,7 @@
 ## Screenshots
 ![Screenshot01](/media/desktop.png?raw=true "Desktop")
 ![Screenshot02](/media/desktop_nvim.png?raw=true "Neovim")
+![Screenshot03](/media/neofetch.png?raw=true "Neofetch")
 ## Install
 ```bash
 # Manually update the system
