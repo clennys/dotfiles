@@ -96,11 +96,11 @@ cmd("sign define DiagnosticSignInfo text= texthl=DiagnosticSignInfo linehl= n
 cmd("sign define DiagnosticSignHint text= texthl=DiagnosticSignHint linehl= numhl=")
 
 -- Autocommand
-vim.cmd([[
-autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 10000)
-autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 10000)
-autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 10000)
-autocmd BufWritePre *.py.in lua vim.lsp.buf.formatting_sync(nil, 10000)
-autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 10000)
-autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 10000)
-]])
+-- vim.cmd([[
+-- autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 10000)
+-- autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 10000)
+-- autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 10000)
+-- autocmd BufWritePre *.py.in lua vim.lsp.buf.formatting_sync(nil, 10000)
+-- autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 10000)
+-- autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 10000)
+-- ]])

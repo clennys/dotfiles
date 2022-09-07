@@ -2,6 +2,9 @@
 - Automation Tool: [Ansible](https://github.com/ansible/ansible)
 - Distro: [Fedora](https://alt.fedoraproject.org/)
 
+## Screenshots
+![Screenshot01](/media/desktop.png?raw=true "Desktop")
+![Screenshot02](/media/desktop_nvim.png?raw=true "Neovim")
 ## Install
 ```bash
 # Manually update the system
