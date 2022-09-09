@@ -6,9 +6,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export QT_QPA_PLATFORMTHEME=qt5ct
 export VISUAL="nvim"
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="kitty"
 export BROWSER="firefox"
-export READER="zathura"
+export READER="okular"
 export FILE="pcmanfm"
 export TRANS='/home/dennys/Nextcloud/other/transfer'
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
@@ -40,10 +40,12 @@ systemctl --user import-environment DISPLAY&
 clipmenud&
 xset dpms 600 900 1200
 xset r rate 350 60
-light -S 5
-volumeicon&
+light -S 50
+
 
 low_battery.sh&
 blueman-applet&
 
 autorandr -c&
+
+( sleep 20; volumeicon) &

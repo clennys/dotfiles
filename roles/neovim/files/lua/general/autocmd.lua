@@ -3,12 +3,12 @@ local autocmd = vim.api.nvim_create_autocmd
 
 autocmd("FileType", {
 	pattern = { "markdown", "tex" },
-	command = "setlocal wrap "
+	command = "set wrap "
 })
 
 autocmd("FileType", {
 	pattern = { "markdown", "tex" },
-	command = "setlocal linebreak"
+	command = "set linebreak"
 })
 
 autocmd("BufWritePre", {
