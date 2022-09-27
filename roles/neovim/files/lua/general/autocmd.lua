@@ -15,12 +15,16 @@ autocmd("BufWritePre", {
 	callback = function()
 		vim.lsp.buf.format()
 	end,
-	pattern = { "*.js", "*.ts", "*.py", "*.py.in", "*.lua" }
+	pattern = { "*.js", "*.ts", "*.py", "*.py.in", "*.lua", "*.cpp", "*.h" }
 })
 
-autocmd("TextYankPost",
-	{
-		callback = function()
-			vim.highlight.on_yank()
-		end
-	})
+autocmd("TextYankPost", {
+	callback = function()
+		vim.highlight.on_yank()
+	end
+})
+
+autocmd("FileType", {
+	pattern = { "cpp", "c", },
+	command = "setlocal ts=2 sts=2 sw=2",
+})

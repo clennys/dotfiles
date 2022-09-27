@@ -4,6 +4,8 @@
       - texlive-scheme-basic
       - latexmk
       - npm
+      - python3-devel
+      - clang-tools-extra
     state: latest
   become: yes
 
