@@ -178,17 +178,31 @@ globalkeys = gears.table.join(
 		{ description = "swap with next client by index", group = "client" }),
 	awful.key({ modkey, "Shift" }, "k", function() awful.client.swap.byidx(-1) end,
 		{ description = "swap with previous client by index", group = "client" }),
-	awful.key({ modkey, "Control" }, "j", function() awful.screen.focus_relative(1) end,
+	awful.key({ modkey }, ".", function() awful.screen.focus_relative(1) end,
 		{ description = "focus the next screen", group = "screen" }),
-	awful.key({ modkey, "Control" }, "k", function() awful.screen.focus_relative(-1) end,
+	awful.key({ modkey }, ",", function() awful.screen.focus_relative(-1) end,
 		{ description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey, }, "u", awful.client.urgent.jumpto,
 		{ description = "jump to urgent client", group = "client" }),
-	-- 		if client.focus then
-	-- 			client.focus:raise()
-	-- 		end
-	-- 	end,
-	-- 	{ description = "go back", group = "client" }),
+	awful.key({ modkey, "Shift" }, ".", function()
+		local c = client.focus
+		if c then c:move_to_screen(1)
+		end
+	end,
+		{ description = "focus the next screen +1", group = "screen" }),
+	awful.key({ modkey, "Shift" }, ",", function()
+		local c = client.focus
+		if c then c:move_to_screen(-1)
+		end
+	end,
+		{ description = "focus the next screen -1", group = "screen" }),
+
+	awful.key({ modkey }, "b", function()
+		local s = awful.screen.focused()
+		s.mywibox.visible = not s.mywibox.visible
+	end,
+		{ description = "toggle wibox on focused screen", group = "screen" }),
+
 
 	-- Standard program
 	awful.key({ modkey, "Shift" }, "Return", function() awful.spawn(Terminal) end,
@@ -247,6 +261,11 @@ globalkeys = gears.table.join(
 	awful.key({ modkey, "Shift" }, "m", function()
 		awful.util.spawn("dman")
 	end,
+		{ description = "files university", group = "dmenu" }),
+	awful.key({ modkey, "Shift" }, "o", function()
+		awful.util.spawn("dopen.sh")
+	end,
+
 		{ description = "lookup manpages", group = "dmenu" }),
 	awful.key({ modkey, "Shift" }, "a", function()
 		awful.util.spawn("dklay.sh")
@@ -266,6 +285,12 @@ globalkeys = gears.table.join(
 		awful.util.spawn("slock")
 	end,
 		{ description = "lock screen", group = "utils" }),
+
+	awful.key({ modkey, "Shift" }, "f", function()
+		awful.util.spawn("kitty -e vifm")
+	end,
+		{ description = "change keyboardlayout", group = "dmenu" }),
+
 
 	-- Brightness
 	awful.key({}, "XF86MonBrightnessUp", function() os.execute("light -A 5") end,
@@ -349,7 +374,10 @@ clientkeys = gears.table.join(
 
 	awful.key({ modkey }, "Tab", function()
 		awesome.emit_signal("bling::window_switcher::turn_on")
-	end, { description = "Window Switcher", group = "bling" })
+	end, { description = "Window Switcher", group = "bling" }),
+	awful.key({ modkey, '>' }, 'o', function(c)
+		c:move_to_screen()
+	end, { description = 'move to screen', group = 'client' })
 )
 
 -- Bind all key numbers to tags.
