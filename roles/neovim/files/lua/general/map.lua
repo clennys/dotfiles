@@ -74,6 +74,5 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
 -- Undotree
 map("n", "<leader>ut", "<cmd>UndotreeToggle<cr>")
 
--- Auto session
-map("n", "<leader>sd", '<CMD>lua require("auto-session").DeleteSession()<CR>')
-map("n", "<leader>ss", '<CMD>lua require("auto-session").SaveSession()<CR>')
+-- FTerm
+map("n", "te", "<CMD>lua require('FTerm').toggle()<CR>")

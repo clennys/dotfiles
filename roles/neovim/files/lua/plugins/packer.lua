@@ -198,6 +198,8 @@ return require("packer").startup({
 			-- 	require("plugins.settings.lualine")
 			-- end
 		}
+		use "numToStr/FTerm.nvim"
+		use 'mfussenegger/nvim-jdtls'
 	end,
 	-- Packer settings
 	config = {
