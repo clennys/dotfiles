@@ -16,8 +16,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
-# Select theme
-antigen theme denysdovhan/spaceship-prompt
 
 # Tell Antigen that you're done
 antigen apply
@@ -33,7 +31,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 bindkey -v
 
 # Personal configuration
-source ~/.zsh/theme.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/functions.zsh
 
@@ -56,3 +53,5 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+eval "$(starship init zsh)"
