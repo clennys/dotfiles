@@ -8,7 +8,6 @@
 
 source ~/.zsh/antigen.zsh
 
-antigen bundle MichaelAquilina/zsh-auto-notify
 antigen bundle hlissner/zsh-autopair
 antigen bundle Aloxaf/fzf-tab
 antigen bundle zsh-users/zsh-completions
@@ -38,7 +37,7 @@ source ~/.zsh/functions.zsh
 
 bindkey '^l' autosuggest-accept
     precmd () {
-      vcs_info
+      # vcs_info
       print -Pn "\e]0;[%n@%M][%~]\a"
     } 
     preexec () { print -Pn "\e]0;[%n@%M][%~] - ($1)\a" }

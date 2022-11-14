@@ -1,6 +1,3 @@
-# Inserts a blank line between shell prompts
-add_newline = true
-
 format = """
 $username\
 $hostname\
@@ -81,6 +78,8 @@ $battery\
 $time\
 """
 
+add_newline = false
+
 
 [character]
 success_symbol = "[>](bold green)" 
@@ -111,4 +110,6 @@ style = "bold red"
 disabled = false
 format = "[$time]($style)"
 
+[cmd_duration]
+show_notifications = true
 
